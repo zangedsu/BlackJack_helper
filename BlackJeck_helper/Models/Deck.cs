@@ -13,8 +13,24 @@ namespace BlackJeck_helper.Models;
     public Deck()
     {
         Cards = new List<Card>();
+        loadData();
     }
 
-
+    private void loadData() 
+    {
+        Cards.Add(new Card("2",      2));
+        Cards.Add(new Card("3",      3));
+        Cards.Add(new Card("4",      4));
+        Cards.Add(new Card("5",      5));
+        Cards.Add(new Card("6",      6));
+        Cards.Add(new Card("7",      7));
+        Cards.Add(new Card("8",      8));
+        Cards.Add(new Card("9",      9));
+        Cards.Add(new Card("10",     10));
+        Cards.Add(new Card("туз",    11));
+        Cards.Add(new Card("король", 1));
+        Cards.Add(new Card("дама",   1));
+        Cards.Add(new Card("валет",  1));  
+    }
 }
 

@@ -119,7 +119,7 @@
             </StackPanel>
             <StackPanel Grid.Row="1" Grid.Column="9" Background="White" Margin="5,0,5,0">
                 <Label Content="Номинал:" HorizontalContentAlignment="Center" FontFamily="Arial" FontSize="11"/>
-                <Label Content="ТУЗ" HorizontalContentAlignment="Center" FontFamily="Arial" Foreground="#FF19982D" FontSize="13"/>
+                <Label Content="ТУЗ" HorizontalContentAlignment="Center" FontFamily="Arial" FontSize="13" Foreground="#FF19D8E6"/>
                 <Label Content="Количество:" HorizontalContentAlignment="Center" FontFamily="Arial" FontSize="11"/>
                 <Label Content="2" HorizontalContentAlignment="Center" FontFamily="Arial" Foreground="#FF197898" Background="{x:Null}" FontSize="13"/>
                 <Button Content="+"/>
@@ -223,7 +223,7 @@
             </StackPanel>
             <StackPanel Grid.Row="3" Grid.Column="9" Background="White" Margin="5,0,5,0">
                 <Label Content="Номинал:" HorizontalContentAlignment="Center" FontFamily="Arial" FontSize="11"/>
-                <Label Content="ТУЗ" HorizontalContentAlignment="Center" FontFamily="Arial" Foreground="#FF19982D" FontSize="13"/>
+                <Label Content="ТУЗ" HorizontalContentAlignment="Center" FontFamily="Arial" FontSize="13" Foreground="#FF19D8E6"/>
                 <Label Content="Количество:" HorizontalContentAlignment="Center" FontFamily="Arial" FontSize="11"/>
                 <Label Content="2" HorizontalContentAlignment="Center" FontFamily="Arial" Foreground="#FF197898" Background="{x:Null}" FontSize="13"/>
                 <Button Content="+"/>
@@ -327,7 +327,7 @@
             </StackPanel>
             <StackPanel Grid.Row="5" Grid.Column="9" Background="White" Margin="5,0,5,0">
                 <Label Content="Номинал:" HorizontalContentAlignment="Center" FontFamily="Arial" FontSize="11"/>
-                <Label Content="ТУЗ" HorizontalContentAlignment="Center" FontFamily="Arial" Foreground="#FF19982D" FontSize="13"/>
+                <Label Content="ТУЗ" HorizontalContentAlignment="Center" FontFamily="Arial" FontSize="13" Foreground="#FF19D8E6"/>
                 <Label Content="Количество:" HorizontalContentAlignment="Center" FontFamily="Arial" FontSize="11"/>
                 <Label Content="2" HorizontalContentAlignment="Center" FontFamily="Arial" Foreground="#FF197898" Background="{x:Null}" FontSize="13"/>
                 <Button Content="+"/>
