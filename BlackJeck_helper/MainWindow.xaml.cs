@@ -24,5 +24,11 @@ namespace BlackJeck_helper
         {
             InitializeComponent();
         }
+
+        private void ClickAddGamers2(object sender, RoutedEventArgs e)
+        {
+            int tmp = int.Parse(LabelCountGamers2.Content.ToString());
+            LabelCountGamers2.Content = ++tmp;
+        }
     }
 }

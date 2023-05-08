@@ -49,8 +49,8 @@
                 <Label Content="Номинал:" HorizontalContentAlignment="Center" FontFamily="Arial" FontSize="11"/>
                 <Label Content="2" HorizontalContentAlignment="Center" FontFamily="Arial" Foreground="#FF19982D" FontSize="13"/>
                 <Label Content="Количество:" HorizontalContentAlignment="Center" FontFamily="Arial" FontSize="11"/>
-                <Label Content="2" HorizontalContentAlignment="Center" FontFamily="Arial" Foreground="#FF197898" Background="{x:Null}" FontSize="13"/>
-                <Button Content="+"/>
+                <Label x:Name="LabelCountGamers2" Content="2" HorizontalContentAlignment="Center" FontFamily="Arial" Foreground="#FF197898" Background="{x:Null}" FontSize="13"/>
+                <Button Content="+" Click="ClickAddGamers2"/>
                 <Button Content="-"/>
             </StackPanel>
             <StackPanel Grid.Row="1" Grid.Column="1" Background="White" Margin="5,0,5,0">
