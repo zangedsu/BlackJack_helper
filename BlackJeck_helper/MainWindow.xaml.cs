@@ -25,10 +25,14 @@ namespace BlackJeck_helper
             InitializeComponent();
         }
 
-        private void ClickAddGamers2(object sender, RoutedEventArgs e)
+        private void ClickAddGamers(object sender, RoutedEventArgs e)
         {
             int tmp = int.Parse(LabelCountGamers2.Content.ToString());
             LabelCountGamers2.Content = ++tmp;
+            var st = e.Source.ToString();
+            string s = ((Button)sender).Tag.ToString();
+            MessageBox.Show(s);
+           
         }
     }
 }

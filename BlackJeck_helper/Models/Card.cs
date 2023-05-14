@@ -9,6 +9,7 @@ namespace BlackJeck_helper.Models;
     {
     public string Name { get; set; }
     public int Value { get; set; }
+    public int Count { get; set; }
 
     /// <summary>
     /// Принимает строку с названием карты и её "вес"
@@ -19,6 +20,7 @@ namespace BlackJeck_helper.Models;
     {
         Name = name;
         Value = value;
+        Count = 4;
     }
 }
 

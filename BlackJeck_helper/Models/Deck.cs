@@ -28,9 +28,9 @@ namespace BlackJeck_helper.Models;
         Cards.Add(new Card("9",      9));
         Cards.Add(new Card("10",     10));
         Cards.Add(new Card("туз",    11));
-        Cards.Add(new Card("король", 1));
-        Cards.Add(new Card("дама",   1));
-        Cards.Add(new Card("валет",  1));  
+        Cards.Add(new Card("король", 10));
+        Cards.Add(new Card("дама",   10));
+        Cards.Add(new Card("валет",  10));  
     }
 }
 
