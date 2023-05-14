@@ -43,6 +43,7 @@ namespace BlackJack_helper.Controllers;
         _indexes.Add("валет", 12);
     }
 
+    //добавить карту в колоду на столе оппонентов
     public void AddCardToOpponentsTable(string nominal)
     {
         _opponentsTable.OpponentsDeck.Cards[_indexes[nominal]].CardsCount += 1;

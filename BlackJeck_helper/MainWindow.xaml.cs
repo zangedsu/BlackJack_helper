@@ -34,7 +34,7 @@ namespace BlackJeck_helper
         private void ClickAddGamers(object sender, RoutedEventArgs e)
         {
             string s = ((Button)sender).Tag.ToString();
-            controller.AddCardToOpponentsTable(s);
+            controller.AddCardToOpponentsTable(s.ToLower());
            updateOpponentsDataSources();
         }
 
@@ -42,6 +42,37 @@ namespace BlackJeck_helper
         {
             LabelCountGamers2.DataContext = null;
             LabelCountGamers2.DataContext = controller;
+
+            LabelCountGamers3.DataContext = null;
+            LabelCountGamers3.DataContext = controller;
+
+            LabelCountGamers4.DataContext = null;
+            LabelCountGamers4.DataContext = controller;
+
+            LabelCountGamers5.DataContext = null;
+            LabelCountGamers5.DataContext = controller;
+
+            LabelCountGamers6.DataContext = null;
+            LabelCountGamers6.DataContext = controller;
+
+            LabelCountGamers7.DataContext = null;
+            LabelCountGamers7.DataContext = controller;
+
+            LabelCountGamers8.DataContext = null;
+            LabelCountGamers8.DataContext = controller;
+
+            LabelCountGamers9.DataContext = null;
+            LabelCountGamers9.DataContext = controller;
+            LabelCountGamers10.DataContext = null;
+            LabelCountGamers10.DataContext = controller;
+            LabelCountGamersTuz.DataContext = null;
+            LabelCountGamersTuz.DataContext = controller;
+            LabelCountGamersKorol.DataContext = null;
+            LabelCountGamersKorol.DataContext = controller;
+            LabelCountGamersDama.DataContext = null;
+            LabelCountGamersDama.DataContext = controller;
+            LabelCountGamersValet.DataContext = null;
+            LabelCountGamersValet.DataContext = controller;
         }
     }
 }

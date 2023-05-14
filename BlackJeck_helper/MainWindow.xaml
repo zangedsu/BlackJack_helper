@@ -50,7 +50,7 @@
                 <Label Content="Номинал:" HorizontalContentAlignment="Center" FontFamily="Arial" FontSize="11"/>
                 <Label Content="2" HorizontalContentAlignment="Center" FontFamily="Arial" Foreground="#FF19982D" FontSize="13"/>
                 <Label Content="Количество:" HorizontalContentAlignment="Center" FontFamily="Arial" FontSize="11"/>
-                <Label x:Name="LabelCountGamers2" Content="{Binding OpponentsTable.OpponentsDeck.Cards[0].CardsCount, NotifyOnSourceUpdated=True, NotifyOnTargetUpdated=True}" HorizontalContentAlignment="Center" FontFamily="Arial" Foreground="#FF197898" Background="{x:Null}" FontSize="13">
+                <Label x:Name="LabelCountGamers2" Content="{Binding OpponentsTable.OpponentsDeck.Cards[0].CardsCount}" HorizontalContentAlignment="Center" FontFamily="Arial" Foreground="#FF197898" Background="{x:Null}" FontSize="13">
                     <Label.DataContext>
                         <Controllers:MainController/>
                     </Label.DataContext>
@@ -62,7 +62,11 @@
                 <Label Content="Номинал:" HorizontalContentAlignment="Center" FontFamily="Arial" FontSize="11"/>
                 <Label Content="3" HorizontalContentAlignment="Center" FontFamily="Arial" Foreground="#FF19982D" FontSize="13"/>
                 <Label Content="Количество:" HorizontalContentAlignment="Center" FontFamily="Arial" FontSize="11"/>
-                <Label Content="2" HorizontalContentAlignment="Center" FontFamily="Arial" Foreground="#FF197898" Background="{x:Null}" FontSize="13"/>
+                <Label x:Name="LabelCountGamers3" Content="{Binding OpponentsTable.OpponentsDeck.Cards[1].CardsCount}" HorizontalContentAlignment="Center" FontFamily="Arial" Foreground="#FF197898" Background="{x:Null}" FontSize="13">
+                    <Label.DataContext>
+                        <Controllers:MainController/>
+                    </Label.DataContext>
+                </Label>
                 <Button Content="+" Click="ClickAddGamers" Tag="3"/>
                 <Button Content="-"/>
             </StackPanel>
@@ -70,7 +74,11 @@
                 <Label Content="Номинал:" HorizontalContentAlignment="Center" FontFamily="Arial" FontSize="11"/>
                 <Label Content="4" HorizontalContentAlignment="Center" FontFamily="Arial" Foreground="#FF19982D" FontSize="13"/>
                 <Label Content="Количество:" HorizontalContentAlignment="Center" FontFamily="Arial" FontSize="11"/>
-                <Label Content="2" HorizontalContentAlignment="Center" FontFamily="Arial" Foreground="#FF197898" Background="{x:Null}" FontSize="13"/>
+                <Label x:Name="LabelCountGamers4" Content="{Binding OpponentsTable.OpponentsDeck.Cards[2].CardsCount}" HorizontalContentAlignment="Center" FontFamily="Arial" Foreground="#FF197898" Background="{x:Null}" FontSize="13">
+                    <Label.DataContext>
+                        <Controllers:MainController/>
+                    </Label.DataContext>
+                </Label>
                 <Button Content="+" Tag="4" Click="ClickAddGamers"/>
                 <Button Content="-"/>
             </StackPanel>
@@ -78,7 +86,11 @@
                 <Label Content="Номинал:" HorizontalContentAlignment="Center" FontFamily="Arial" FontSize="11"/>
                 <Label Content="5" HorizontalContentAlignment="Center" FontFamily="Arial" Foreground="#FF19982D" FontSize="13"/>
                 <Label Content="Количество:" HorizontalContentAlignment="Center" FontFamily="Arial" FontSize="11"/>
-                <Label Content="2" HorizontalContentAlignment="Center" FontFamily="Arial" Foreground="#FF197898" Background="{x:Null}" FontSize="13"/>
+                <Label x:Name="LabelCountGamers5" Content="{Binding OpponentsTable.OpponentsDeck.Cards[3].CardsCount}" HorizontalContentAlignment="Center" FontFamily="Arial" Foreground="#FF197898" Background="{x:Null}" FontSize="13">
+                    <Label.DataContext>
+                        <Controllers:MainController/>
+                    </Label.DataContext>
+                </Label>
                 <Button Content="+" Tag="5" Click="ClickAddGamers"/>
                 <Button Content="-"/>
             </StackPanel>
@@ -86,7 +98,11 @@
                 <Label Content="Номинал:" HorizontalContentAlignment="Center" FontFamily="Arial" FontSize="11"/>
                 <Label Content="6" HorizontalContentAlignment="Center" FontFamily="Arial" Foreground="#FF19982D" FontSize="13"/>
                 <Label Content="Количество:" HorizontalContentAlignment="Center" FontFamily="Arial" FontSize="11"/>
-                <Label Content="2" HorizontalContentAlignment="Center" FontFamily="Arial" Foreground="#FF197898" Background="{x:Null}" FontSize="13"/>
+                <Label x:Name="LabelCountGamers6" Content="{Binding OpponentsTable.OpponentsDeck.Cards[4].CardsCount}" HorizontalContentAlignment="Center" FontFamily="Arial" Foreground="#FF197898" Background="{x:Null}" FontSize="13">
+                    <Label.DataContext>
+                        <Controllers:MainController/>
+                    </Label.DataContext>
+                </Label>
                 <Button Content="+" Tag="6" Click="ClickAddGamers"/>
                 <Button Content="-"/>
             </StackPanel>
@@ -94,7 +110,11 @@
                 <Label Content="Номинал:" HorizontalContentAlignment="Center" FontFamily="Arial" FontSize="11"/>
                 <Label Content="7" HorizontalContentAlignment="Center" FontFamily="Arial" Foreground="#FF19982D" FontSize="13"/>
                 <Label Content="Количество:" HorizontalContentAlignment="Center" FontFamily="Arial" FontSize="11"/>
-                <Label Content="2" HorizontalContentAlignment="Center" FontFamily="Arial" Foreground="#FF197898" Background="{x:Null}" FontSize="13"/>
+                <Label x:Name="LabelCountGamers7" Content="{Binding OpponentsTable.OpponentsDeck.Cards[5].CardsCount}" HorizontalContentAlignment="Center" FontFamily="Arial" Foreground="#FF197898" Background="{x:Null}" FontSize="13">
+                    <Label.DataContext>
+                        <Controllers:MainController/>
+                    </Label.DataContext>
+                </Label>
                 <Button Content="+" Tag="7" Click="ClickAddGamers"/>
                 <Button Content="-"/>
             </StackPanel>
@@ -102,7 +122,11 @@
                 <Label Content="Номинал:" HorizontalContentAlignment="Center" FontFamily="Arial" FontSize="11"/>
                 <Label Content="8" HorizontalContentAlignment="Center" FontFamily="Arial" Foreground="#FF19982D" FontSize="13"/>
                 <Label Content="Количество:" HorizontalContentAlignment="Center" FontFamily="Arial" FontSize="11"/>
-                <Label Content="2" HorizontalContentAlignment="Center" FontFamily="Arial" Foreground="#FF197898" Background="{x:Null}" FontSize="13"/>
+                <Label x:Name="LabelCountGamers8" Content="{Binding OpponentsTable.OpponentsDeck.Cards[6].CardsCount}" HorizontalContentAlignment="Center" FontFamily="Arial" Foreground="#FF197898" Background="{x:Null}" FontSize="13">
+                    <Label.DataContext>
+                        <Controllers:MainController/>
+                    </Label.DataContext>
+                </Label>
                 <Button Content="+" Tag="8" Click="ClickAddGamers"/>
                 <Button Content="-"/>
             </StackPanel>
@@ -110,7 +134,11 @@
                 <Label Content="Номинал:" HorizontalContentAlignment="Center" FontFamily="Arial" FontSize="11"/>
                 <Label Content="9" HorizontalContentAlignment="Center" FontFamily="Arial" Foreground="#FF19982D" FontSize="13"/>
                 <Label Content="Количество:" HorizontalContentAlignment="Center" FontFamily="Arial" FontSize="11"/>
-                <Label Content="2" HorizontalContentAlignment="Center" FontFamily="Arial" Foreground="#FF197898" Background="{x:Null}" FontSize="13"/>
+                <Label x:Name="LabelCountGamers9" Content="{Binding OpponentsTable.OpponentsDeck.Cards[7].CardsCount}" HorizontalContentAlignment="Center" FontFamily="Arial" Foreground="#FF197898" Background="{x:Null}" FontSize="13">
+                    <Label.DataContext>
+                        <Controllers:MainController/>
+                    </Label.DataContext>
+                </Label>
                 <Button Content="+" Tag="9" Click="ClickAddGamers"/>
                 <Button Content="-"/>
             </StackPanel>
@@ -118,7 +146,11 @@
                 <Label Content="Номинал:" HorizontalContentAlignment="Center" FontFamily="Arial" FontSize="11"/>
                 <Label Content="10" HorizontalContentAlignment="Center" FontFamily="Arial" Foreground="#FF19982D" FontSize="13"/>
                 <Label Content="Количество:" HorizontalContentAlignment="Center" FontFamily="Arial" FontSize="11"/>
-                <Label Content="2" HorizontalContentAlignment="Center" FontFamily="Arial" Foreground="#FF197898" Background="{x:Null}" FontSize="13"/>
+                <Label x:Name="LabelCountGamers10" Content="{Binding OpponentsTable.OpponentsDeck.Cards[8].CardsCount}" HorizontalContentAlignment="Center" FontFamily="Arial" Foreground="#FF197898" Background="{x:Null}" FontSize="13">
+                    <Label.DataContext>
+                        <Controllers:MainController/>
+                    </Label.DataContext>
+                </Label>
                 <Button Content="+" Tag="10" Click="ClickAddGamers"/>
                 <Button Content="-"/>
             </StackPanel>
@@ -126,7 +158,11 @@
                 <Label Content="Номинал:" HorizontalContentAlignment="Center" FontFamily="Arial" FontSize="11"/>
                 <Label Content="ТУЗ" HorizontalContentAlignment="Center" FontFamily="Arial" FontSize="13" Foreground="#FF19D8E6"/>
                 <Label Content="Количество:" HorizontalContentAlignment="Center" FontFamily="Arial" FontSize="11"/>
-                <Label Content="2" HorizontalContentAlignment="Center" FontFamily="Arial" Foreground="#FF197898" Background="{x:Null}" FontSize="13"/>
+                <Label x:Name="LabelCountGamersTuz" Content="{Binding OpponentsTable.OpponentsDeck.Cards[9].CardsCount}" HorizontalContentAlignment="Center" FontFamily="Arial" Foreground="#FF197898" Background="{x:Null}" FontSize="13">
+                    <Label.DataContext>
+                        <Controllers:MainController/>
+                    </Label.DataContext>
+                </Label>
                 <Button Content="+" Tag="ТУЗ" Click="ClickAddGamers"/>
                 <Button Content="-"/>
             </StackPanel>
@@ -134,7 +170,11 @@
                 <Label Content="Номинал:" HorizontalContentAlignment="Center" FontFamily="Arial" FontSize="11"/>
                 <Label Content="КОРОЛЬ" HorizontalContentAlignment="Center" FontFamily="Arial" Foreground="#FF19982D" FontSize="13"/>
                 <Label Content="Количество:" HorizontalContentAlignment="Center" FontFamily="Arial" FontSize="11"/>
-                <Label Content="2" HorizontalContentAlignment="Center" FontFamily="Arial" Foreground="#FF197898" Background="{x:Null}" FontSize="13"/>
+                <Label x:Name="LabelCountGamersKorol" Content="{Binding OpponentsTable.OpponentsDeck.Cards[10].CardsCount}" HorizontalContentAlignment="Center" FontFamily="Arial" Foreground="#FF197898" Background="{x:Null}" FontSize="13">
+                    <Label.DataContext>
+                        <Controllers:MainController/>
+                    </Label.DataContext>
+                </Label>
                 <Button Content="+" Tag="КОРОЛЬ" Click="ClickAddGamers"/>
                 <Button Content="-"/>
             </StackPanel>
@@ -142,7 +182,11 @@
                 <Label Content="Номинал:" HorizontalContentAlignment="Center" FontFamily="Arial" FontSize="11"/>
                 <Label Content="ДАМА" HorizontalContentAlignment="Center" FontFamily="Arial" Foreground="#FF19982D" FontSize="13"/>
                 <Label Content="Количество:" HorizontalContentAlignment="Center" FontFamily="Arial" FontSize="11"/>
-                <Label Content="2" HorizontalContentAlignment="Center" FontFamily="Arial" Foreground="#FF197898" Background="{x:Null}" FontSize="13"/>
+                <Label x:Name="LabelCountGamersDama" Content="{Binding OpponentsTable.OpponentsDeck.Cards[11].CardsCount}" HorizontalContentAlignment="Center" FontFamily="Arial" Foreground="#FF197898" Background="{x:Null}" FontSize="13">
+                    <Label.DataContext>
+                        <Controllers:MainController/>
+                    </Label.DataContext>
+                </Label>
                 <Button Content="+" Tag="ДАМА" Click="ClickAddGamers"/>
                 <Button Content="-"/>
             </StackPanel>
@@ -150,7 +194,11 @@
                 <Label Content="Номинал:" HorizontalContentAlignment="Center" FontFamily="Arial" FontSize="11"/>
                 <Label Content="ВАЛЕТ" HorizontalContentAlignment="Center" FontFamily="Arial" Foreground="#FF19982D" FontSize="13"/>
                 <Label Content="Количество:" HorizontalContentAlignment="Center" FontFamily="Arial" FontSize="11"/>
-                <Label Content="2" HorizontalContentAlignment="Center" FontFamily="Arial" Foreground="#FF197898" Background="{x:Null}" FontSize="13"/>
+                <Label x:Name="LabelCountGamersValet" Content="{Binding OpponentsTable.OpponentsDeck.Cards[12].CardsCount}" HorizontalContentAlignment="Center" FontFamily="Arial" Foreground="#FF197898" Background="{x:Null}" FontSize="13">
+                    <Label.DataContext>
+                        <Controllers:MainController/>
+                    </Label.DataContext>
+                </Label>
                 <Button Content="+" Tag="ВАЛЕТ" Click="ClickAddGamers"/>
                 <Button Content="-"/>
             </StackPanel>
