@@ -56,7 +56,7 @@
                     </Label.DataContext>
                 </Label>
                 <Button Content="+" Click="ClickAddGamers" Tag="2"/>
-                <Button Content="-"/>
+                <Button Content="-" Tag="2" Click="ClickDeleteGamers"/>
             </StackPanel>
             <StackPanel Grid.Row="1" Grid.Column="1" Background="White" Margin="5,0,5,0">
                 <Label Content="Номинал:" HorizontalContentAlignment="Center" FontFamily="Arial" FontSize="11"/>
@@ -68,7 +68,7 @@
                     </Label.DataContext>
                 </Label>
                 <Button Content="+" Click="ClickAddGamers" Tag="3"/>
-                <Button Content="-"/>
+                <Button Content="-" Tag="3" Click="ClickDeleteGamers"/>
             </StackPanel>
             <StackPanel Grid.Row="1" Grid.Column="2" Background="White" Margin="5,0,5,0">
                 <Label Content="Номинал:" HorizontalContentAlignment="Center" FontFamily="Arial" FontSize="11"/>
@@ -80,7 +80,7 @@
                     </Label.DataContext>
                 </Label>
                 <Button Content="+" Tag="4" Click="ClickAddGamers"/>
-                <Button Content="-"/>
+                <Button Content="-" Tag="4" Click="ClickDeleteGamers"/>
             </StackPanel>
             <StackPanel Grid.Row="1" Grid.Column="3" Background="White" Margin="5,0,5,0">
                 <Label Content="Номинал:" HorizontalContentAlignment="Center" FontFamily="Arial" FontSize="11"/>
@@ -92,7 +92,7 @@
                     </Label.DataContext>
                 </Label>
                 <Button Content="+" Tag="5" Click="ClickAddGamers"/>
-                <Button Content="-"/>
+                <Button Content="-" Tag="5" Click="ClickDeleteGamers"/>
             </StackPanel>
             <StackPanel Grid.Row="1" Grid.Column="4" Background="White" Margin="5,0,5,0">
                 <Label Content="Номинал:" HorizontalContentAlignment="Center" FontFamily="Arial" FontSize="11"/>
@@ -104,7 +104,7 @@
                     </Label.DataContext>
                 </Label>
                 <Button Content="+" Tag="6" Click="ClickAddGamers"/>
-                <Button Content="-"/>
+                <Button Content="-" Tag="6" Click="ClickDeleteGamers"/>
             </StackPanel>
             <StackPanel Grid.Row="1" Grid.Column="5" Background="White" Margin="5,0,5,0">
                 <Label Content="Номинал:" HorizontalContentAlignment="Center" FontFamily="Arial" FontSize="11"/>
@@ -116,7 +116,7 @@
                     </Label.DataContext>
                 </Label>
                 <Button Content="+" Tag="7" Click="ClickAddGamers"/>
-                <Button Content="-"/>
+                <Button Content="-" Tag="7" Click="ClickDeleteGamers"/>
             </StackPanel>
             <StackPanel Grid.Row="1" Grid.Column="6" Background="White" Margin="5,0,5,0">
                 <Label Content="Номинал:" HorizontalContentAlignment="Center" FontFamily="Arial" FontSize="11"/>
@@ -128,7 +128,7 @@
                     </Label.DataContext>
                 </Label>
                 <Button Content="+" Tag="8" Click="ClickAddGamers"/>
-                <Button Content="-"/>
+                <Button Content="-" Tag="8" Click="ClickDeleteGamers"/>
             </StackPanel>
             <StackPanel Grid.Row="1" Grid.Column="7" Background="White" Margin="5,0,5,0">
                 <Label Content="Номинал:" HorizontalContentAlignment="Center" FontFamily="Arial" FontSize="11"/>
@@ -140,7 +140,7 @@
                     </Label.DataContext>
                 </Label>
                 <Button Content="+" Tag="9" Click="ClickAddGamers"/>
-                <Button Content="-"/>
+                <Button Content="-" Tag="9" Click="ClickDeleteGamers"/>
             </StackPanel>
             <StackPanel Grid.Row="1" Grid.Column="8" Background="White" Margin="5,0,5,0">
                 <Label Content="Номинал:" HorizontalContentAlignment="Center" FontFamily="Arial" FontSize="11"/>
@@ -152,7 +152,7 @@
                     </Label.DataContext>
                 </Label>
                 <Button Content="+" Tag="10" Click="ClickAddGamers"/>
-                <Button Content="-"/>
+                <Button Content="-" Tag="10" Click="ClickDeleteGamers"/>
             </StackPanel>
             <StackPanel Grid.Row="1" Grid.Column="9" Background="White" Margin="5,0,5,0">
                 <Label Content="Номинал:" HorizontalContentAlignment="Center" FontFamily="Arial" FontSize="11"/>
@@ -164,7 +164,7 @@
                     </Label.DataContext>
                 </Label>
                 <Button Content="+" Tag="ТУЗ" Click="ClickAddGamers"/>
-                <Button Content="-"/>
+                <Button Content="-" Tag="ТУЗ" Click="ClickDeleteGamers"/>
             </StackPanel>
             <StackPanel Grid.Row="1" Grid.Column="10" Background="White" Margin="5,0,5,0">
                 <Label Content="Номинал:" HorizontalContentAlignment="Center" FontFamily="Arial" FontSize="11"/>
@@ -176,7 +176,7 @@
                     </Label.DataContext>
                 </Label>
                 <Button Content="+" Tag="КОРОЛЬ" Click="ClickAddGamers"/>
-                <Button Content="-"/>
+                <Button Content="-" Tag="КОРОЛЬ" Click="ClickDeleteGamers"/>
             </StackPanel>
             <StackPanel Grid.Row="1" Grid.Column="11" Background="White" Margin="5,0,5,0">
                 <Label Content="Номинал:" HorizontalContentAlignment="Center" FontFamily="Arial" FontSize="11"/>
@@ -188,7 +188,7 @@
                     </Label.DataContext>
                 </Label>
                 <Button Content="+" Tag="ДАМА" Click="ClickAddGamers"/>
-                <Button Content="-"/>
+                <Button Content="-" Tag="ДАМА" Click="ClickDeleteGamers"/>
             </StackPanel>
             <StackPanel Grid.Row="1" Grid.Column="12" Background="White" Margin="5,0,5,0">
                 <Label Content="Номинал:" HorizontalContentAlignment="Center" FontFamily="Arial" FontSize="11"/>
@@ -200,215 +200,215 @@
                     </Label.DataContext>
                 </Label>
                 <Button Content="+" Tag="ВАЛЕТ" Click="ClickAddGamers"/>
-                <Button Content="-"/>
+                <Button Content="-" Tag="ВАЛЕТ" Click="ClickDeleteGamers"/>
             </StackPanel>
             <StackPanel Grid.Row="3" Background="White" Margin="5,0,5,0">
                 <Label Content="Номинал:" HorizontalContentAlignment="Center" FontFamily="Arial" FontSize="11"/>
                 <Label Content="2" HorizontalContentAlignment="Center" FontFamily="Arial" Foreground="#FF19982D" FontSize="13"/>
                 <Label Content="Количество:" HorizontalContentAlignment="Center" FontFamily="Arial" FontSize="11"/>
                 <Label Content="2" HorizontalContentAlignment="Center" FontFamily="Arial" Foreground="#FF197898" Background="{x:Null}" FontSize="13"/>
-                <Button Content="+"/>
-                <Button Content="-"/>
+                <Button Content="+" Tag="2"/>
+                <Button Content="-" Tag="2"/>
             </StackPanel>
             <StackPanel Grid.Row="3" Grid.Column="1" Background="White" Margin="5,0,5,0">
                 <Label Content="Номинал:" HorizontalContentAlignment="Center" FontFamily="Arial" FontSize="11"/>
                 <Label Content="3" HorizontalContentAlignment="Center" FontFamily="Arial" Foreground="#FF19982D" FontSize="13"/>
                 <Label Content="Количество:" HorizontalContentAlignment="Center" FontFamily="Arial" FontSize="11"/>
                 <Label Content="2" HorizontalContentAlignment="Center" FontFamily="Arial" Foreground="#FF197898" Background="{x:Null}" FontSize="13"/>
-                <Button Content="+"/>
-                <Button Content="-"/>
+                <Button Content="+" Tag="3"/>
+                <Button Content="-" Tag="3"/>
             </StackPanel>
             <StackPanel Grid.Row="3" Grid.Column="2" Background="White" Margin="5,0,5,0">
                 <Label Content="Номинал:" HorizontalContentAlignment="Center" FontFamily="Arial" FontSize="11"/>
                 <Label Content="4" HorizontalContentAlignment="Center" FontFamily="Arial" Foreground="#FF19982D" FontSize="13"/>
                 <Label Content="Количество:" HorizontalContentAlignment="Center" FontFamily="Arial" FontSize="11"/>
                 <Label Content="2" HorizontalContentAlignment="Center" FontFamily="Arial" Foreground="#FF197898" Background="{x:Null}" FontSize="13"/>
-                <Button Content="+"/>
-                <Button Content="-"/>
+                <Button Content="+" Tag="4"/>
+                <Button Content="-" Tag="4"/>
             </StackPanel>
             <StackPanel Grid.Row="3" Grid.Column="3" Background="White" Margin="5,0,5,0">
                 <Label Content="Номинал:" HorizontalContentAlignment="Center" FontFamily="Arial" FontSize="11"/>
                 <Label Content="5" HorizontalContentAlignment="Center" FontFamily="Arial" Foreground="#FF19982D" FontSize="13"/>
                 <Label Content="Количество:" HorizontalContentAlignment="Center" FontFamily="Arial" FontSize="11"/>
                 <Label Content="2" HorizontalContentAlignment="Center" FontFamily="Arial" Foreground="#FF197898" Background="{x:Null}" FontSize="13"/>
-                <Button Content="+"/>
-                <Button Content="-"/>
+                <Button Content="+" Tag="5"/>
+                <Button Content="-" Tag="5"/>
             </StackPanel>
             <StackPanel Grid.Row="3" Grid.Column="4" Background="White" Margin="5,0,5,0">
                 <Label Content="Номинал:" HorizontalContentAlignment="Center" FontFamily="Arial" FontSize="11"/>
                 <Label Content="6" HorizontalContentAlignment="Center" FontFamily="Arial" Foreground="#FF19982D" FontSize="13"/>
                 <Label Content="Количество:" HorizontalContentAlignment="Center" FontFamily="Arial" FontSize="11"/>
                 <Label Content="2" HorizontalContentAlignment="Center" FontFamily="Arial" Foreground="#FF197898" Background="{x:Null}" FontSize="13"/>
-                <Button Content="+"/>
-                <Button Content="-"/>
+                <Button Content="+" Tag="6"/>
+                <Button Content="-" Tag="6"/>
             </StackPanel>
             <StackPanel Grid.Row="3" Grid.Column="5" Background="White" Margin="5,0,5,0">
                 <Label Content="Номинал:" HorizontalContentAlignment="Center" FontFamily="Arial" FontSize="11"/>
                 <Label Content="7" HorizontalContentAlignment="Center" FontFamily="Arial" Foreground="#FF19982D" FontSize="13"/>
                 <Label Content="Количество:" HorizontalContentAlignment="Center" FontFamily="Arial" FontSize="11"/>
                 <Label Content="2" HorizontalContentAlignment="Center" FontFamily="Arial" Foreground="#FF197898" Background="{x:Null}" FontSize="13"/>
-                <Button Content="+"/>
-                <Button Content="-"/>
+                <Button Content="+" Tag="7"/>
+                <Button Content="-" Tag="7"/>
             </StackPanel>
             <StackPanel Grid.Row="3" Grid.Column="6" Background="White" Margin="5,0,5,0">
                 <Label Content="Номинал:" HorizontalContentAlignment="Center" FontFamily="Arial" FontSize="11"/>
                 <Label Content="8" HorizontalContentAlignment="Center" FontFamily="Arial" Foreground="#FF19982D" FontSize="13"/>
                 <Label Content="Количество:" HorizontalContentAlignment="Center" FontFamily="Arial" FontSize="11"/>
                 <Label Content="2" HorizontalContentAlignment="Center" FontFamily="Arial" Foreground="#FF197898" Background="{x:Null}" FontSize="13"/>
-                <Button Content="+"/>
-                <Button Content="-"/>
+                <Button Content="+" Tag="8"/>
+                <Button Content="-" Tag="8"/>
             </StackPanel>
             <StackPanel Grid.Row="3" Grid.Column="7" Background="White" Margin="5,0,5,0">
                 <Label Content="Номинал:" HorizontalContentAlignment="Center" FontFamily="Arial" FontSize="11"/>
                 <Label Content="9" HorizontalContentAlignment="Center" FontFamily="Arial" Foreground="#FF19982D" FontSize="13"/>
                 <Label Content="Количество:" HorizontalContentAlignment="Center" FontFamily="Arial" FontSize="11"/>
                 <Label Content="2" HorizontalContentAlignment="Center" FontFamily="Arial" Foreground="#FF197898" Background="{x:Null}" FontSize="13"/>
-                <Button Content="+"/>
-                <Button Content="-"/>
+                <Button Content="+" Tag="9"/>
+                <Button Content="-" Tag="9"/>
             </StackPanel>
             <StackPanel Grid.Row="3" Grid.Column="8" Background="White" Margin="5,0,5,0">
                 <Label Content="Номинал:" HorizontalContentAlignment="Center" FontFamily="Arial" FontSize="11"/>
                 <Label Content="10" HorizontalContentAlignment="Center" FontFamily="Arial" Foreground="#FF19982D" FontSize="13"/>
                 <Label Content="Количество:" HorizontalContentAlignment="Center" FontFamily="Arial" FontSize="11"/>
                 <Label Content="2" HorizontalContentAlignment="Center" FontFamily="Arial" Foreground="#FF197898" Background="{x:Null}" FontSize="13"/>
-                <Button Content="+"/>
-                <Button Content="-"/>
+                <Button Content="+" Tag="10"/>
+                <Button Content="-" Tag="10"/>
             </StackPanel>
             <StackPanel Grid.Row="3" Grid.Column="9" Background="White" Margin="5,0,5,0">
                 <Label Content="Номинал:" HorizontalContentAlignment="Center" FontFamily="Arial" FontSize="11"/>
                 <Label Content="ТУЗ" HorizontalContentAlignment="Center" FontFamily="Arial" FontSize="13" Foreground="#FF19D8E6"/>
                 <Label Content="Количество:" HorizontalContentAlignment="Center" FontFamily="Arial" FontSize="11"/>
                 <Label Content="2" HorizontalContentAlignment="Center" FontFamily="Arial" Foreground="#FF197898" Background="{x:Null}" FontSize="13"/>
-                <Button Content="+"/>
-                <Button Content="-"/>
+                <Button Content="+" Tag="ТУЗ"/>
+                <Button Content="-" Tag="ТУЗ"/>
             </StackPanel>
             <StackPanel Grid.Row="3" Grid.Column="10" Background="White" Margin="5,0,5,0">
                 <Label Content="Номинал:" HorizontalContentAlignment="Center" FontFamily="Arial" FontSize="11"/>
                 <Label Content="КОРОЛЬ" HorizontalContentAlignment="Center" FontFamily="Arial" Foreground="#FF19982D" FontSize="13"/>
                 <Label Content="Количество:" HorizontalContentAlignment="Center" FontFamily="Arial" FontSize="11"/>
                 <Label Content="2" HorizontalContentAlignment="Center" FontFamily="Arial" Foreground="#FF197898" Background="{x:Null}" FontSize="13"/>
-                <Button Content="+"/>
-                <Button Content="-"/>
+                <Button Content="+" Tag="КОРОЛЬ"/>
+                <Button Content="-" Tag="КОРОЛЬ"/>
             </StackPanel>
             <StackPanel Grid.Row="3" Grid.Column="11" Background="White" Margin="5,0,5,0">
                 <Label Content="Номинал:" HorizontalContentAlignment="Center" FontFamily="Arial" FontSize="11"/>
                 <Label Content="ДАМА" HorizontalContentAlignment="Center" FontFamily="Arial" Foreground="#FF19982D" FontSize="13"/>
                 <Label Content="Количество:" HorizontalContentAlignment="Center" FontFamily="Arial" FontSize="11"/>
                 <Label Content="2" HorizontalContentAlignment="Center" FontFamily="Arial" Foreground="#FF197898" Background="{x:Null}" FontSize="13"/>
-                <Button Content="+"/>
-                <Button Content="-"/>
+                <Button Content="+" Tag="ДАМА"/>
+                <Button Content="-" Tag="ДАМА"/>
             </StackPanel>
             <StackPanel Grid.Row="3" Grid.Column="12" Background="White" Margin="5,0,5,0">
                 <Label Content="Номинал:" HorizontalContentAlignment="Center" FontFamily="Arial" FontSize="11"/>
                 <Label Content="ВАЛЕТ" HorizontalContentAlignment="Center" FontFamily="Arial" Foreground="#FF19982D" FontSize="13"/>
                 <Label Content="Количество:" HorizontalContentAlignment="Center" FontFamily="Arial" FontSize="11"/>
                 <Label Content="2" HorizontalContentAlignment="Center" FontFamily="Arial" Foreground="#FF197898" Background="{x:Null}" FontSize="13"/>
-                <Button Content="+"/>
-                <Button Content="-"/>
+                <Button Content="+" Tag="ВАЛЕТ"/>
+                <Button Content="-" Tag="ВАЛЕТ"/>
             </StackPanel>
             <StackPanel Grid.Row="5" Background="White" Margin="5,0,5,0">
                 <Label Content="Номинал:" HorizontalContentAlignment="Center" FontFamily="Arial" FontSize="11"/>
                 <Label Content="2" HorizontalContentAlignment="Center" FontFamily="Arial" Foreground="#FF19982D" FontSize="13"/>
                 <Label Content="Количество:" HorizontalContentAlignment="Center" FontFamily="Arial" FontSize="11"/>
                 <Label Content="2" HorizontalContentAlignment="Center" FontFamily="Arial" Foreground="#FF197898" Background="{x:Null}" FontSize="13"/>
-                <Button Content="+"/>
-                <Button Content="-"/>
+                <Button Content="+" Tag="2"/>
+                <Button Content="-" Tag="2"/>
             </StackPanel>
             <StackPanel Grid.Row="5" Grid.Column="1" Background="White" Margin="5,0,5,0">
                 <Label Content="Номинал:" HorizontalContentAlignment="Center" FontFamily="Arial" FontSize="11"/>
                 <Label Content="3" HorizontalContentAlignment="Center" FontFamily="Arial" Foreground="#FF19982D" FontSize="13"/>
                 <Label Content="Количество:" HorizontalContentAlignment="Center" FontFamily="Arial" FontSize="11"/>
                 <Label Content="2" HorizontalContentAlignment="Center" FontFamily="Arial" Foreground="#FF197898" Background="{x:Null}" FontSize="13"/>
-                <Button Content="+"/>
-                <Button Content="-"/>
+                <Button Content="+" Tag="3"/>
+                <Button Content="-" Tag="3"/>
             </StackPanel>
             <StackPanel Grid.Row="5" Grid.Column="2" Background="White" Margin="5,0,5,0">
                 <Label Content="Номинал:" HorizontalContentAlignment="Center" FontFamily="Arial" FontSize="11"/>
                 <Label Content="4" HorizontalContentAlignment="Center" FontFamily="Arial" Foreground="#FF19982D" FontSize="13"/>
                 <Label Content="Количество:" HorizontalContentAlignment="Center" FontFamily="Arial" FontSize="11"/>
                 <Label Content="2" HorizontalContentAlignment="Center" FontFamily="Arial" Foreground="#FF197898" Background="{x:Null}" FontSize="13"/>
-                <Button Content="+"/>
-                <Button Content="-"/>
+                <Button Content="+" Tag="4"/>
+                <Button Content="-" Tag="4"/>
             </StackPanel>
             <StackPanel Grid.Row="5" Grid.Column="3" Background="White" Margin="5,0,5,0">
                 <Label Content="Номинал:" HorizontalContentAlignment="Center" FontFamily="Arial" FontSize="11"/>
                 <Label Content="5" HorizontalContentAlignment="Center" FontFamily="Arial" Foreground="#FF19982D" FontSize="13"/>
                 <Label Content="Количество:" HorizontalContentAlignment="Center" FontFamily="Arial" FontSize="11"/>
                 <Label Content="2" HorizontalContentAlignment="Center" FontFamily="Arial" Foreground="#FF197898" Background="{x:Null}" FontSize="13"/>
-                <Button Content="+"/>
-                <Button Content="-"/>
+                <Button Content="+" Tag="5"/>
+                <Button Content="-" Tag="5"/>
             </StackPanel>
             <StackPanel Grid.Row="5" Grid.Column="4" Background="White" Margin="5,0,5,0">
                 <Label Content="Номинал:" HorizontalContentAlignment="Center" FontFamily="Arial" FontSize="11"/>
                 <Label Content="6" HorizontalContentAlignment="Center" FontFamily="Arial" Foreground="#FF19982D" FontSize="13"/>
                 <Label Content="Количество:" HorizontalContentAlignment="Center" FontFamily="Arial" FontSize="11"/>
                 <Label Content="2" HorizontalContentAlignment="Center" FontFamily="Arial" Foreground="#FF197898" Background="{x:Null}" FontSize="13"/>
-                <Button Content="+"/>
-                <Button Content="-"/>
+                <Button Content="+" Tag="6"/>
+                <Button Content="-" Tag="6"/>
             </StackPanel>
             <StackPanel Grid.Row="5" Grid.Column="5" Background="White" Margin="5,0,5,0">
                 <Label Content="Номинал:" HorizontalContentAlignment="Center" FontFamily="Arial" FontSize="11"/>
                 <Label Content="7" HorizontalContentAlignment="Center" FontFamily="Arial" Foreground="#FF19982D" FontSize="13"/>
                 <Label Content="Количество:" HorizontalContentAlignment="Center" FontFamily="Arial" FontSize="11"/>
                 <Label Content="2" HorizontalContentAlignment="Center" FontFamily="Arial" Foreground="#FF197898" Background="{x:Null}" FontSize="13"/>
-                <Button Content="+"/>
-                <Button Content="-"/>
+                <Button Content="+" Tag="7"/>
+                <Button Content="-" Tag="7"/>
             </StackPanel>
             <StackPanel Grid.Row="5" Grid.Column="6" Background="White" Margin="5,0,5,0">
                 <Label Content="Номинал:" HorizontalContentAlignment="Center" FontFamily="Arial" FontSize="11"/>
                 <Label Content="8" HorizontalContentAlignment="Center" FontFamily="Arial" Foreground="#FF19982D" FontSize="13"/>
                 <Label Content="Количество:" HorizontalContentAlignment="Center" FontFamily="Arial" FontSize="11"/>
                 <Label Content="2" HorizontalContentAlignment="Center" FontFamily="Arial" Foreground="#FF197898" Background="{x:Null}" FontSize="13"/>
-                <Button Content="+"/>
-                <Button Content="-"/>
+                <Button Content="+" Tag="8"/>
+                <Button Content="-" Tag="8"/>
             </StackPanel>
             <StackPanel Grid.Row="5" Grid.Column="7" Background="White" Margin="5,0,5,0">
                 <Label Content="Номинал:" HorizontalContentAlignment="Center" FontFamily="Arial" FontSize="11"/>
                 <Label Content="9" HorizontalContentAlignment="Center" FontFamily="Arial" Foreground="#FF19982D" FontSize="13"/>
                 <Label Content="Количество:" HorizontalContentAlignment="Center" FontFamily="Arial" FontSize="11"/>
                 <Label Content="2" HorizontalContentAlignment="Center" FontFamily="Arial" Foreground="#FF197898" Background="{x:Null}" FontSize="13"/>
-                <Button Content="+"/>
-                <Button Content="-"/>
+                <Button Content="+" Tag="9"/>
+                <Button Content="-" Tag="9"/>
             </StackPanel>
             <StackPanel Grid.Row="5" Grid.Column="8" Background="White" Margin="5,0,5,0">
                 <Label Content="Номинал:" HorizontalContentAlignment="Center" FontFamily="Arial" FontSize="11"/>
                 <Label Content="10" HorizontalContentAlignment="Center" FontFamily="Arial" Foreground="#FF19982D" FontSize="13"/>
                 <Label Content="Количество:" HorizontalContentAlignment="Center" FontFamily="Arial" FontSize="11"/>
                 <Label Content="2" HorizontalContentAlignment="Center" FontFamily="Arial" Foreground="#FF197898" Background="{x:Null}" FontSize="13"/>
-                <Button Content="+"/>
-                <Button Content="-"/>
+                <Button Content="+" Tag="10"/>
+                <Button Content="-" Tag="10"/>
             </StackPanel>
             <StackPanel Grid.Row="5" Grid.Column="9" Background="White" Margin="5,0,5,0">
                 <Label Content="Номинал:" HorizontalContentAlignment="Center" FontFamily="Arial" FontSize="11"/>
                 <Label Content="ТУЗ" HorizontalContentAlignment="Center" FontFamily="Arial" FontSize="13" Foreground="#FF19D8E6"/>
                 <Label Content="Количество:" HorizontalContentAlignment="Center" FontFamily="Arial" FontSize="11"/>
                 <Label Content="2" HorizontalContentAlignment="Center" FontFamily="Arial" Foreground="#FF197898" Background="{x:Null}" FontSize="13"/>
-                <Button Content="+"/>
-                <Button Content="-"/>
+                <Button Content="+" Tag="ТУЗ"/>
+                <Button Content="-" Tag="ТУЗ"/>
             </StackPanel>
             <StackPanel Grid.Row="5" Grid.Column="10" Background="White" Margin="5,0,5,0">
                 <Label Content="Номинал:" HorizontalContentAlignment="Center" FontFamily="Arial" FontSize="11"/>
                 <Label Content="КОРОЛЬ" HorizontalContentAlignment="Center" FontFamily="Arial" Foreground="#FF19982D" FontSize="13"/>
                 <Label Content="Количество:" HorizontalContentAlignment="Center" FontFamily="Arial" FontSize="11"/>
                 <Label Content="2" HorizontalContentAlignment="Center" FontFamily="Arial" Foreground="#FF197898" Background="{x:Null}" FontSize="13"/>
-                <Button Content="+"/>
-                <Button Content="-"/>
+                <Button Content="+" Tag="КОРОЛЬ"/>
+                <Button Content="-" Tag="КОРОЛЬ"/>
             </StackPanel>
             <StackPanel Grid.Row="5" Grid.Column="11" Background="White" Margin="5,0,5,0">
                 <Label Content="Номинал:" HorizontalContentAlignment="Center" FontFamily="Arial" FontSize="11"/>
                 <Label Content="ДАМА" HorizontalContentAlignment="Center" FontFamily="Arial" Foreground="#FF19982D" FontSize="13"/>
                 <Label Content="Количество:" HorizontalContentAlignment="Center" FontFamily="Arial" FontSize="11"/>
                 <Label Content="2" HorizontalContentAlignment="Center" FontFamily="Arial" Foreground="#FF197898" Background="{x:Null}" FontSize="13"/>
-                <Button Content="+"/>
-                <Button Content="-"/>
+                <Button Content="+" Tag="ДАМА"/>
+                <Button Content="-" Tag="ДАМА"/>
             </StackPanel>
             <StackPanel Grid.Row="5" Grid.Column="12" Background="White" Margin="5,0,5,0">
                 <Label Content="Номинал:" HorizontalContentAlignment="Center" FontFamily="Arial" FontSize="11"/>
                 <Label Content="ВАЛЕТ" HorizontalContentAlignment="Center" FontFamily="Arial" Foreground="#FF19982D" FontSize="13"/>
                 <Label Content="Количество:" HorizontalContentAlignment="Center" FontFamily="Arial" FontSize="11"/>
                 <Label Content="2" HorizontalContentAlignment="Center" FontFamily="Arial" Foreground="#FF197898" Background="{x:Null}" FontSize="13"/>
-                <Button Content="+"/>
-                <Button Content="-"/>
+                <Button Content="+" Tag="ВАЛЕТ"/>
+                <Button Content="-" Tag="ВАЛЕТ"/>
             </StackPanel>
         </Grid>
 

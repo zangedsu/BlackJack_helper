@@ -14,6 +14,7 @@ namespace BlackJack_helper.Controllers;
     private DealerTable _dealerTable;
     private UserTable _userTable;
     private Dictionary<string, int> _indexes;
+    public Deck Deck { get { return _deck; } }
     public OpponentsTable OpponentsTable { get {return _opponentsTable;} }
     public DealerTable DealerTable { get { return _dealerTable;} }
     public UserTable UserTable { get { return _userTable;} }
@@ -48,6 +49,13 @@ namespace BlackJack_helper.Controllers;
     {
         _opponentsTable.OpponentsDeck.Cards[_indexes[nominal]].CardsCount += 1;
         _deck.Cards[_indexes[nominal]].CardsCount -= 1;
+    }
+
+    //удалить карту из колоды на столе оппонентов
+    public void DeleteCardFromOpponentsTable(string nominal)
+    {
+        _opponentsTable.OpponentsDeck.Cards[_indexes[nominal]].CardsCount -= 1;
+        _deck.Cards[_indexes[nominal]].CardsCount += 1;
     }
 
 }

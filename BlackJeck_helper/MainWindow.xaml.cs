@@ -74,5 +74,12 @@ namespace BlackJeck_helper
             LabelCountGamersValet.DataContext = null;
             LabelCountGamersValet.DataContext = controller;
         }
+
+        private void ClickDeleteGamers(object sender, RoutedEventArgs e)
+        {
+            string s = ((Button)sender).Tag.ToString();
+            controller.DeleteCardFromOpponentsTable(s.ToLower());
+            updateOpponentsDataSources();
+        }
     }
 }
