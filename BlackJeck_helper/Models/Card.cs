@@ -16,11 +16,11 @@ namespace BlackJeck_helper.Models;
     /// </summary>
     /// <param name="name"></param>
     /// <param name="value"></param>
-    public Card(string name, int value)
+    public Card(string name, int value, int count)
     {
         Name = name;
         Value = value;
-        Count = 4;
+        Count = count;
     }
 }
 

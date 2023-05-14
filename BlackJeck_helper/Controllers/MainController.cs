@@ -8,7 +8,7 @@ using BlackJeck_helper.Models;
 namespace BlackJack_helper.Controllers;
     internal class MainController
     {
-    private Deck _deck = new Deck();
+    private Deck _deck = new Deck(1);
     private int _count = 0;
 
     }
