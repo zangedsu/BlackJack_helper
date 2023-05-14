@@ -1,4 +1,6 @@
-﻿using System;
+﻿using BlackJack_helper.Controllers;
+using BlackJack_helper.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -20,19 +22,26 @@ namespace BlackJeck_helper
     /// </summary>
     public partial class MainWindow : Window
     {
+        public MainController controller;
+        public OpponentsTable opponentsTable;
         public MainWindow()
         {
             InitializeComponent();
+            controller = new MainController();
+            opponentsTable = new OpponentsTable();
         }
 
         private void ClickAddGamers(object sender, RoutedEventArgs e)
         {
-            int tmp = int.Parse(LabelCountGamers2.Content.ToString());
-            LabelCountGamers2.Content = ++tmp;
-            var st = e.Source.ToString();
             string s = ((Button)sender).Tag.ToString();
-            MessageBox.Show(s);
-           
+            controller.AddCardToOpponentsTable(s);
+           updateOpponentsDataSources();
+        }
+
+        public void updateOpponentsDataSources()
+        {
+            LabelCountGamers2.DataContext = null;
+            LabelCountGamers2.DataContext = controller;
         }
     }
 }

@@ -1,9 +1,10 @@
-﻿<Window x:Class="BlackJeck_helper.MainWindow"
+﻿<Window
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:BlackJeck_helper"
+        xmlns:Models="clr-namespace:BlackJack_helper.Models" xmlns:Controllers="clr-namespace:BlackJack_helper.Controllers" x:Class="BlackJeck_helper.MainWindow"
         mc:Ignorable="d"
         Title="MainWindow" Height="650" Width="1316">
     <Grid>
@@ -49,7 +50,11 @@
                 <Label Content="Номинал:" HorizontalContentAlignment="Center" FontFamily="Arial" FontSize="11"/>
                 <Label Content="2" HorizontalContentAlignment="Center" FontFamily="Arial" Foreground="#FF19982D" FontSize="13"/>
                 <Label Content="Количество:" HorizontalContentAlignment="Center" FontFamily="Arial" FontSize="11"/>
-                <Label x:Name="LabelCountGamers2" Content="2" HorizontalContentAlignment="Center" FontFamily="Arial" Foreground="#FF197898" Background="{x:Null}" FontSize="13"/>
+                <Label x:Name="LabelCountGamers2" Content="{Binding OpponentsTable.OpponentsDeck.Cards[0].CardsCount, NotifyOnSourceUpdated=True, NotifyOnTargetUpdated=True}" HorizontalContentAlignment="Center" FontFamily="Arial" Foreground="#FF197898" Background="{x:Null}" FontSize="13">
+                    <Label.DataContext>
+                        <Controllers:MainController/>
+                    </Label.DataContext>
+                </Label>
                 <Button Content="+" Click="ClickAddGamers" Tag="2"/>
                 <Button Content="-"/>
             </StackPanel>

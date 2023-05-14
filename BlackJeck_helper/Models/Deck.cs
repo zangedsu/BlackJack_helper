@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace BlackJeck_helper.Models;
-    internal class Deck
+    public class Deck
     {
     public List<Card> Cards { get; set; }
 

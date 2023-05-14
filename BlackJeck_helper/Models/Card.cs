@@ -5,11 +5,11 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace BlackJeck_helper.Models;
-    internal class Card
+    public class Card
     {
     public string Name { get; set; }
     public int Value { get; set; }
-    public int Count { get; set; }
+    public int CardsCount { get; set; }
 
     /// <summary>
     /// Принимает строку с названием карты и её "вес"
@@ -20,7 +20,7 @@ namespace BlackJeck_helper.Models;
     {
         Name = name;
         Value = value;
-        Count = count;
+        CardsCount = count;
     }
 }
 

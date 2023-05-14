@@ -8,14 +8,14 @@ using System.Windows.Xps;
 
 namespace BlackJack_helper.Models;
 
-    internal class OpponentsTable
+    public class OpponentsTable
     {
     private Deck _deck = new Deck(0);
-    public Deck Deck { get { return _deck; } }
+    public Deck OpponentsDeck { get { return _deck; } }
 
     public OpponentsTable()
     {
-      
+        _deck = new Deck(0); 
     }
 }
 

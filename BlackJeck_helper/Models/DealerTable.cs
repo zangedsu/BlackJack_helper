@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace BlackJack_helper.Models;
 
-    internal class DealerTable
+    public class DealerTable
     {
     }
 
