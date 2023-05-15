@@ -38,6 +38,13 @@ namespace BlackJeck_helper
            updateOpponentsDataSources();
         }
 
+        private void ClickAddDealer(object sender, RoutedEventArgs e)
+        {
+            string s = ((Button)sender).Tag.ToString();
+            controller.AddCardToOpponentsTable(s.ToLower());
+            updateOpponentsDataSources();
+        }
+
         public void updateOpponentsDataSources()
         {
             LabelCountGamers2.DataContext = null;
