@@ -206,7 +206,11 @@
                 <Label Content="Номинал:" HorizontalContentAlignment="Center" FontFamily="Arial" FontSize="11"/>
                 <Label Content="2" HorizontalContentAlignment="Center" FontFamily="Arial" Foreground="#FF19982D" FontSize="13"/>
                 <Label Content="Количество:" HorizontalContentAlignment="Center" FontFamily="Arial" FontSize="11"/>
-                <Label Content="2" HorizontalContentAlignment="Center" FontFamily="Arial" Foreground="#FF197898" Background="{x:Null}" FontSize="13"/>
+                <Label x:Name="LabelCountDealer2" Content="{Binding DealerTable.DealerDeck.Cards[0].CardsCount}" HorizontalContentAlignment="Center" FontFamily="Arial" Foreground="#FF197898" Background="{x:Null}" FontSize="13">
+                    <Label.DataContext>
+                        <Controllers:MainController/>
+                    </Label.DataContext>
+                </Label>
                 <Button Content="+" Tag="2"/>
                 <Button Content="-" Tag="2"/>
             </StackPanel>
@@ -214,7 +218,11 @@
                 <Label Content="Номинал:" HorizontalContentAlignment="Center" FontFamily="Arial" FontSize="11"/>
                 <Label Content="3" HorizontalContentAlignment="Center" FontFamily="Arial" Foreground="#FF19982D" FontSize="13"/>
                 <Label Content="Количество:" HorizontalContentAlignment="Center" FontFamily="Arial" FontSize="11"/>
-                <Label Content="2" HorizontalContentAlignment="Center" FontFamily="Arial" Foreground="#FF197898" Background="{x:Null}" FontSize="13"/>
+                <Label x:Name="LabelCountDealer3" Content="{Binding DealerTable.DealerDeck.Cards[1].CardsCount}" HorizontalContentAlignment="Center" FontFamily="Arial" Foreground="#FF197898" Background="{x:Null}" FontSize="13">
+                    <Label.DataContext>
+                        <Controllers:MainController/>
+                    </Label.DataContext>
+                </Label>
                 <Button Content="+" Tag="3"/>
                 <Button Content="-" Tag="3"/>
             </StackPanel>
@@ -222,7 +230,11 @@
                 <Label Content="Номинал:" HorizontalContentAlignment="Center" FontFamily="Arial" FontSize="11"/>
                 <Label Content="4" HorizontalContentAlignment="Center" FontFamily="Arial" Foreground="#FF19982D" FontSize="13"/>
                 <Label Content="Количество:" HorizontalContentAlignment="Center" FontFamily="Arial" FontSize="11"/>
-                <Label Content="2" HorizontalContentAlignment="Center" FontFamily="Arial" Foreground="#FF197898" Background="{x:Null}" FontSize="13"/>
+                <Label x:Name="LabelCountDealer4" Content="{Binding DealerTable.DealerDeck.Cards[2].CardsCount}" HorizontalContentAlignment="Center" FontFamily="Arial" Foreground="#FF197898" Background="{x:Null}" FontSize="13">
+                    <Label.DataContext>
+                        <Controllers:MainController/>
+                    </Label.DataContext>
+                </Label>
                 <Button Content="+" Tag="4"/>
                 <Button Content="-" Tag="4"/>
             </StackPanel>
@@ -230,7 +242,11 @@
                 <Label Content="Номинал:" HorizontalContentAlignment="Center" FontFamily="Arial" FontSize="11"/>
                 <Label Content="5" HorizontalContentAlignment="Center" FontFamily="Arial" Foreground="#FF19982D" FontSize="13"/>
                 <Label Content="Количество:" HorizontalContentAlignment="Center" FontFamily="Arial" FontSize="11"/>
-                <Label Content="2" HorizontalContentAlignment="Center" FontFamily="Arial" Foreground="#FF197898" Background="{x:Null}" FontSize="13"/>
+                <Label x:Name="LabelCountDealer5" Content="{Binding DealerTable.DealerDeck.Cards[3].CardsCount}" HorizontalContentAlignment="Center" FontFamily="Arial" Foreground="#FF197898" Background="{x:Null}" FontSize="13">
+                    <Label.DataContext>
+                        <Controllers:MainController/>
+                    </Label.DataContext>
+                </Label>
                 <Button Content="+" Tag="5"/>
                 <Button Content="-" Tag="5"/>
             </StackPanel>
@@ -238,7 +254,11 @@
                 <Label Content="Номинал:" HorizontalContentAlignment="Center" FontFamily="Arial" FontSize="11"/>
                 <Label Content="6" HorizontalContentAlignment="Center" FontFamily="Arial" Foreground="#FF19982D" FontSize="13"/>
                 <Label Content="Количество:" HorizontalContentAlignment="Center" FontFamily="Arial" FontSize="11"/>
-                <Label Content="2" HorizontalContentAlignment="Center" FontFamily="Arial" Foreground="#FF197898" Background="{x:Null}" FontSize="13"/>
+                <Label x:Name="LabelCountDealer6" Content="{Binding DealerTable.DealerDeck.Cards[4].CardsCount}" HorizontalContentAlignment="Center" FontFamily="Arial" Foreground="#FF197898" Background="{x:Null}" FontSize="13">
+                    <Label.DataContext>
+                        <Controllers:MainController/>
+                    </Label.DataContext>
+                </Label>
                 <Button Content="+" Tag="6"/>
                 <Button Content="-" Tag="6"/>
             </StackPanel>
@@ -246,7 +266,11 @@
                 <Label Content="Номинал:" HorizontalContentAlignment="Center" FontFamily="Arial" FontSize="11"/>
                 <Label Content="7" HorizontalContentAlignment="Center" FontFamily="Arial" Foreground="#FF19982D" FontSize="13"/>
                 <Label Content="Количество:" HorizontalContentAlignment="Center" FontFamily="Arial" FontSize="11"/>
-                <Label Content="2" HorizontalContentAlignment="Center" FontFamily="Arial" Foreground="#FF197898" Background="{x:Null}" FontSize="13"/>
+                <Label x:Name="LabelCountDealer7" Content="{Binding DealerTable.DealerDeck.Cards[5].CardsCount}" HorizontalContentAlignment="Center" FontFamily="Arial" Foreground="#FF197898" Background="{x:Null}" FontSize="13">
+                    <Label.DataContext>
+                        <Controllers:MainController/>
+                    </Label.DataContext>
+                </Label>
                 <Button Content="+" Tag="7"/>
                 <Button Content="-" Tag="7"/>
             </StackPanel>
@@ -254,7 +278,11 @@
                 <Label Content="Номинал:" HorizontalContentAlignment="Center" FontFamily="Arial" FontSize="11"/>
                 <Label Content="8" HorizontalContentAlignment="Center" FontFamily="Arial" Foreground="#FF19982D" FontSize="13"/>
                 <Label Content="Количество:" HorizontalContentAlignment="Center" FontFamily="Arial" FontSize="11"/>
-                <Label Content="2" HorizontalContentAlignment="Center" FontFamily="Arial" Foreground="#FF197898" Background="{x:Null}" FontSize="13"/>
+                <Label x:Name="LabelCountDealer8" Content="{Binding DealerTable.DealerDeck.Cards[6].CardsCount}" HorizontalContentAlignment="Center" FontFamily="Arial" Foreground="#FF197898" Background="{x:Null}" FontSize="13">
+                    <Label.DataContext>
+                        <Controllers:MainController/>
+                    </Label.DataContext>
+                </Label>
                 <Button Content="+" Tag="8"/>
                 <Button Content="-" Tag="8"/>
             </StackPanel>
@@ -262,7 +290,11 @@
                 <Label Content="Номинал:" HorizontalContentAlignment="Center" FontFamily="Arial" FontSize="11"/>
                 <Label Content="9" HorizontalContentAlignment="Center" FontFamily="Arial" Foreground="#FF19982D" FontSize="13"/>
                 <Label Content="Количество:" HorizontalContentAlignment="Center" FontFamily="Arial" FontSize="11"/>
-                <Label Content="2" HorizontalContentAlignment="Center" FontFamily="Arial" Foreground="#FF197898" Background="{x:Null}" FontSize="13"/>
+                <Label x:Name="LabelCountDealer9" Content="{Binding DealerTable.DealerDeck.Cards[7].CardsCount}" HorizontalContentAlignment="Center" FontFamily="Arial" Foreground="#FF197898" Background="{x:Null}" FontSize="13">
+                    <Label.DataContext>
+                        <Controllers:MainController/>
+                    </Label.DataContext>
+                </Label>
                 <Button Content="+" Tag="9"/>
                 <Button Content="-" Tag="9"/>
             </StackPanel>
@@ -270,7 +302,11 @@
                 <Label Content="Номинал:" HorizontalContentAlignment="Center" FontFamily="Arial" FontSize="11"/>
                 <Label Content="10" HorizontalContentAlignment="Center" FontFamily="Arial" Foreground="#FF19982D" FontSize="13"/>
                 <Label Content="Количество:" HorizontalContentAlignment="Center" FontFamily="Arial" FontSize="11"/>
-                <Label Content="2" HorizontalContentAlignment="Center" FontFamily="Arial" Foreground="#FF197898" Background="{x:Null}" FontSize="13"/>
+                <Label x:Name="LabelCountDealer10" Content="{Binding DealerTable.DealerDeck.Cards[8].CardsCount}" HorizontalContentAlignment="Center" FontFamily="Arial" Foreground="#FF197898" Background="{x:Null}" FontSize="13">
+                    <Label.DataContext>
+                        <Controllers:MainController/>
+                    </Label.DataContext>
+                </Label>
                 <Button Content="+" Tag="10"/>
                 <Button Content="-" Tag="10"/>
             </StackPanel>
@@ -278,7 +314,11 @@
                 <Label Content="Номинал:" HorizontalContentAlignment="Center" FontFamily="Arial" FontSize="11"/>
                 <Label Content="ТУЗ" HorizontalContentAlignment="Center" FontFamily="Arial" FontSize="13" Foreground="#FF19D8E6"/>
                 <Label Content="Количество:" HorizontalContentAlignment="Center" FontFamily="Arial" FontSize="11"/>
-                <Label Content="2" HorizontalContentAlignment="Center" FontFamily="Arial" Foreground="#FF197898" Background="{x:Null}" FontSize="13"/>
+                <Label x:Name="LabelCountDealerTuz" Content="{Binding DealerTable.DealerDeck.Cards[9].CardsCount}" HorizontalContentAlignment="Center" FontFamily="Arial" Foreground="#FF197898" Background="{x:Null}" FontSize="13">
+                    <Label.DataContext>
+                        <Controllers:MainController/>
+                    </Label.DataContext>
+                </Label>
                 <Button Content="+" Tag="ТУЗ"/>
                 <Button Content="-" Tag="ТУЗ"/>
             </StackPanel>
@@ -286,7 +326,11 @@
                 <Label Content="Номинал:" HorizontalContentAlignment="Center" FontFamily="Arial" FontSize="11"/>
                 <Label Content="КОРОЛЬ" HorizontalContentAlignment="Center" FontFamily="Arial" Foreground="#FF19982D" FontSize="13"/>
                 <Label Content="Количество:" HorizontalContentAlignment="Center" FontFamily="Arial" FontSize="11"/>
-                <Label Content="2" HorizontalContentAlignment="Center" FontFamily="Arial" Foreground="#FF197898" Background="{x:Null}" FontSize="13"/>
+                <Label x:Name="LabelCountDealerKorol" Content="{Binding DealerTable.DealerDeck.Cards[10].CardsCount}" HorizontalContentAlignment="Center" FontFamily="Arial" Foreground="#FF197898" Background="{x:Null}" FontSize="13">
+                    <Label.DataContext>
+                        <Controllers:MainController/>
+                    </Label.DataContext>
+                </Label>
                 <Button Content="+" Tag="КОРОЛЬ"/>
                 <Button Content="-" Tag="КОРОЛЬ"/>
             </StackPanel>
@@ -294,7 +338,11 @@
                 <Label Content="Номинал:" HorizontalContentAlignment="Center" FontFamily="Arial" FontSize="11"/>
                 <Label Content="ДАМА" HorizontalContentAlignment="Center" FontFamily="Arial" Foreground="#FF19982D" FontSize="13"/>
                 <Label Content="Количество:" HorizontalContentAlignment="Center" FontFamily="Arial" FontSize="11"/>
-                <Label Content="2" HorizontalContentAlignment="Center" FontFamily="Arial" Foreground="#FF197898" Background="{x:Null}" FontSize="13"/>
+                <Label x:Name="LabelCountDealerDama" Content="{Binding DealerTable.DealerDeck.Cards[11].CardsCount}" HorizontalContentAlignment="Center" FontFamily="Arial" Foreground="#FF197898" Background="{x:Null}" FontSize="13">
+                    <Label.DataContext>
+                        <Controllers:MainController/>
+                    </Label.DataContext>
+                </Label>
                 <Button Content="+" Tag="ДАМА"/>
                 <Button Content="-" Tag="ДАМА"/>
             </StackPanel>
@@ -302,7 +350,11 @@
                 <Label Content="Номинал:" HorizontalContentAlignment="Center" FontFamily="Arial" FontSize="11"/>
                 <Label Content="ВАЛЕТ" HorizontalContentAlignment="Center" FontFamily="Arial" Foreground="#FF19982D" FontSize="13"/>
                 <Label Content="Количество:" HorizontalContentAlignment="Center" FontFamily="Arial" FontSize="11"/>
-                <Label Content="2" HorizontalContentAlignment="Center" FontFamily="Arial" Foreground="#FF197898" Background="{x:Null}" FontSize="13"/>
+                <Label Content="{Binding DealerTable.DealerDeck.Cards[12].CardsCount}" HorizontalContentAlignment="Center" FontFamily="Arial" Foreground="#FF197898" Background="{x:Null}" FontSize="13">
+                    <Label.DataContext>
+                        <Controllers:MainController/>
+                    </Label.DataContext>
+                </Label>
                 <Button Content="+" Tag="ВАЛЕТ"/>
                 <Button Content="-" Tag="ВАЛЕТ"/>
             </StackPanel>
@@ -310,7 +362,11 @@
                 <Label Content="Номинал:" HorizontalContentAlignment="Center" FontFamily="Arial" FontSize="11"/>
                 <Label Content="2" HorizontalContentAlignment="Center" FontFamily="Arial" Foreground="#FF19982D" FontSize="13"/>
                 <Label Content="Количество:" HorizontalContentAlignment="Center" FontFamily="Arial" FontSize="11"/>
-                <Label Content="2" HorizontalContentAlignment="Center" FontFamily="Arial" Foreground="#FF197898" Background="{x:Null}" FontSize="13"/>
+                <Label x:Name="LabelCountUser2" Content="{Binding UserTable.UserDeck.Cards[0].CardsCount}" HorizontalContentAlignment="Center" FontFamily="Arial" Foreground="#FF197898" Background="{x:Null}" FontSize="13">
+                    <Label.DataContext>
+                        <Controllers:MainController/>
+                    </Label.DataContext>
+                </Label>
                 <Button Content="+" Tag="2"/>
                 <Button Content="-" Tag="2"/>
             </StackPanel>
@@ -318,7 +374,11 @@
                 <Label Content="Номинал:" HorizontalContentAlignment="Center" FontFamily="Arial" FontSize="11"/>
                 <Label Content="3" HorizontalContentAlignment="Center" FontFamily="Arial" Foreground="#FF19982D" FontSize="13"/>
                 <Label Content="Количество:" HorizontalContentAlignment="Center" FontFamily="Arial" FontSize="11"/>
-                <Label Content="2" HorizontalContentAlignment="Center" FontFamily="Arial" Foreground="#FF197898" Background="{x:Null}" FontSize="13"/>
+                <Label x:Name="LabelCountUser3" Content="{Binding UserTable.UserDeck.Cards[1].CardsCount}" HorizontalContentAlignment="Center" FontFamily="Arial" Foreground="#FF197898" Background="{x:Null}" FontSize="13">
+                    <Label.DataContext>
+                        <Controllers:MainController/>
+                    </Label.DataContext>
+                </Label>
                 <Button Content="+" Tag="3"/>
                 <Button Content="-" Tag="3"/>
             </StackPanel>
@@ -326,7 +386,11 @@
                 <Label Content="Номинал:" HorizontalContentAlignment="Center" FontFamily="Arial" FontSize="11"/>
                 <Label Content="4" HorizontalContentAlignment="Center" FontFamily="Arial" Foreground="#FF19982D" FontSize="13"/>
                 <Label Content="Количество:" HorizontalContentAlignment="Center" FontFamily="Arial" FontSize="11"/>
-                <Label Content="2" HorizontalContentAlignment="Center" FontFamily="Arial" Foreground="#FF197898" Background="{x:Null}" FontSize="13"/>
+                <Label x:Name="LabelCountUser4" Content="{Binding UserTable.UserDeck.Cards[2].CardsCount}" HorizontalContentAlignment="Center" FontFamily="Arial" Foreground="#FF197898" Background="{x:Null}" FontSize="13">
+                    <Label.DataContext>
+                        <Controllers:MainController/>
+                    </Label.DataContext>
+                </Label>
                 <Button Content="+" Tag="4"/>
                 <Button Content="-" Tag="4"/>
             </StackPanel>
@@ -334,7 +398,11 @@
                 <Label Content="Номинал:" HorizontalContentAlignment="Center" FontFamily="Arial" FontSize="11"/>
                 <Label Content="5" HorizontalContentAlignment="Center" FontFamily="Arial" Foreground="#FF19982D" FontSize="13"/>
                 <Label Content="Количество:" HorizontalContentAlignment="Center" FontFamily="Arial" FontSize="11"/>
-                <Label Content="2" HorizontalContentAlignment="Center" FontFamily="Arial" Foreground="#FF197898" Background="{x:Null}" FontSize="13"/>
+                <Label x:Name="LabelCountUser5" Content="{Binding UserTable.UserDeck.Cards[3].CardsCount}" HorizontalContentAlignment="Center" FontFamily="Arial" Foreground="#FF197898" Background="{x:Null}" FontSize="13">
+                    <Label.DataContext>
+                        <Controllers:MainController/>
+                    </Label.DataContext>
+                </Label>
                 <Button Content="+" Tag="5"/>
                 <Button Content="-" Tag="5"/>
             </StackPanel>
@@ -342,7 +410,11 @@
                 <Label Content="Номинал:" HorizontalContentAlignment="Center" FontFamily="Arial" FontSize="11"/>
                 <Label Content="6" HorizontalContentAlignment="Center" FontFamily="Arial" Foreground="#FF19982D" FontSize="13"/>
                 <Label Content="Количество:" HorizontalContentAlignment="Center" FontFamily="Arial" FontSize="11"/>
-                <Label Content="2" HorizontalContentAlignment="Center" FontFamily="Arial" Foreground="#FF197898" Background="{x:Null}" FontSize="13"/>
+                <Label x:Name="LabelCountUser6" Content="{Binding UserTable.UserDeck.Cards[4].CardsCount}" HorizontalContentAlignment="Center" FontFamily="Arial" Foreground="#FF197898" Background="{x:Null}" FontSize="13">
+                    <Label.DataContext>
+                        <Controllers:MainController/>
+                    </Label.DataContext>
+                </Label>
                 <Button Content="+" Tag="6"/>
                 <Button Content="-" Tag="6"/>
             </StackPanel>
@@ -350,7 +422,11 @@
                 <Label Content="Номинал:" HorizontalContentAlignment="Center" FontFamily="Arial" FontSize="11"/>
                 <Label Content="7" HorizontalContentAlignment="Center" FontFamily="Arial" Foreground="#FF19982D" FontSize="13"/>
                 <Label Content="Количество:" HorizontalContentAlignment="Center" FontFamily="Arial" FontSize="11"/>
-                <Label Content="2" HorizontalContentAlignment="Center" FontFamily="Arial" Foreground="#FF197898" Background="{x:Null}" FontSize="13"/>
+                <Label x:Name="LabelCountUser7" Content="{Binding UserTable.UserDeck.Cards[5].CardsCount}" HorizontalContentAlignment="Center" FontFamily="Arial" Foreground="#FF197898" Background="{x:Null}" FontSize="13">
+                    <Label.DataContext>
+                        <Controllers:MainController/>
+                    </Label.DataContext>
+                </Label>
                 <Button Content="+" Tag="7"/>
                 <Button Content="-" Tag="7"/>
             </StackPanel>
@@ -358,7 +434,11 @@
                 <Label Content="Номинал:" HorizontalContentAlignment="Center" FontFamily="Arial" FontSize="11"/>
                 <Label Content="8" HorizontalContentAlignment="Center" FontFamily="Arial" Foreground="#FF19982D" FontSize="13"/>
                 <Label Content="Количество:" HorizontalContentAlignment="Center" FontFamily="Arial" FontSize="11"/>
-                <Label Content="2" HorizontalContentAlignment="Center" FontFamily="Arial" Foreground="#FF197898" Background="{x:Null}" FontSize="13"/>
+                <Label x:Name="LabelCountUser8" Content="{Binding UserTable.UserDeck.Cards[6].CardsCount}" HorizontalContentAlignment="Center" FontFamily="Arial" Foreground="#FF197898" Background="{x:Null}" FontSize="13">
+                    <Label.DataContext>
+                        <Controllers:MainController/>
+                    </Label.DataContext>
+                </Label>
                 <Button Content="+" Tag="8"/>
                 <Button Content="-" Tag="8"/>
             </StackPanel>
@@ -366,7 +446,11 @@
                 <Label Content="Номинал:" HorizontalContentAlignment="Center" FontFamily="Arial" FontSize="11"/>
                 <Label Content="9" HorizontalContentAlignment="Center" FontFamily="Arial" Foreground="#FF19982D" FontSize="13"/>
                 <Label Content="Количество:" HorizontalContentAlignment="Center" FontFamily="Arial" FontSize="11"/>
-                <Label Content="2" HorizontalContentAlignment="Center" FontFamily="Arial" Foreground="#FF197898" Background="{x:Null}" FontSize="13"/>
+                <Label x:Name="LabelCountUser9" Content="{Binding UserTable.UserDeck.Cards[7].CardsCount}" HorizontalContentAlignment="Center" FontFamily="Arial" Foreground="#FF197898" Background="{x:Null}" FontSize="13">
+                    <Label.DataContext>
+                        <Controllers:MainController/>
+                    </Label.DataContext>
+                </Label>
                 <Button Content="+" Tag="9"/>
                 <Button Content="-" Tag="9"/>
             </StackPanel>
@@ -374,7 +458,11 @@
                 <Label Content="Номинал:" HorizontalContentAlignment="Center" FontFamily="Arial" FontSize="11"/>
                 <Label Content="10" HorizontalContentAlignment="Center" FontFamily="Arial" Foreground="#FF19982D" FontSize="13"/>
                 <Label Content="Количество:" HorizontalContentAlignment="Center" FontFamily="Arial" FontSize="11"/>
-                <Label Content="2" HorizontalContentAlignment="Center" FontFamily="Arial" Foreground="#FF197898" Background="{x:Null}" FontSize="13"/>
+                <Label x:Name="LabelCountUser10" Content="{Binding UserTable.UserDeck.Cards[8].CardsCount}" HorizontalContentAlignment="Center" FontFamily="Arial" Foreground="#FF197898" Background="{x:Null}" FontSize="13">
+                    <Label.DataContext>
+                        <Controllers:MainController/>
+                    </Label.DataContext>
+                </Label>
                 <Button Content="+" Tag="10"/>
                 <Button Content="-" Tag="10"/>
             </StackPanel>
@@ -382,7 +470,11 @@
                 <Label Content="Номинал:" HorizontalContentAlignment="Center" FontFamily="Arial" FontSize="11"/>
                 <Label Content="ТУЗ" HorizontalContentAlignment="Center" FontFamily="Arial" FontSize="13" Foreground="#FF19D8E6"/>
                 <Label Content="Количество:" HorizontalContentAlignment="Center" FontFamily="Arial" FontSize="11"/>
-                <Label Content="2" HorizontalContentAlignment="Center" FontFamily="Arial" Foreground="#FF197898" Background="{x:Null}" FontSize="13"/>
+                <Label x:Name="LabelCountUserTuz" Content="{Binding UserTable.UserDeck.Cards[9].CardsCount}" HorizontalContentAlignment="Center" FontFamily="Arial" Foreground="#FF197898" Background="{x:Null}" FontSize="13">
+                    <Label.DataContext>
+                        <Controllers:MainController/>
+                    </Label.DataContext>
+                </Label>
                 <Button Content="+" Tag="ТУЗ"/>
                 <Button Content="-" Tag="ТУЗ"/>
             </StackPanel>
@@ -390,7 +482,11 @@
                 <Label Content="Номинал:" HorizontalContentAlignment="Center" FontFamily="Arial" FontSize="11"/>
                 <Label Content="КОРОЛЬ" HorizontalContentAlignment="Center" FontFamily="Arial" Foreground="#FF19982D" FontSize="13"/>
                 <Label Content="Количество:" HorizontalContentAlignment="Center" FontFamily="Arial" FontSize="11"/>
-                <Label Content="2" HorizontalContentAlignment="Center" FontFamily="Arial" Foreground="#FF197898" Background="{x:Null}" FontSize="13"/>
+                <Label x:Name="LabelCountUserKorol" Content="{Binding UserTable.UserDeck.Cards[10].CardsCount}" HorizontalContentAlignment="Center" FontFamily="Arial" Foreground="#FF197898" Background="{x:Null}" FontSize="13">
+                    <Label.DataContext>
+                        <Controllers:MainController/>
+                    </Label.DataContext>
+                </Label>
                 <Button Content="+" Tag="КОРОЛЬ"/>
                 <Button Content="-" Tag="КОРОЛЬ"/>
             </StackPanel>
@@ -398,7 +494,11 @@
                 <Label Content="Номинал:" HorizontalContentAlignment="Center" FontFamily="Arial" FontSize="11"/>
                 <Label Content="ДАМА" HorizontalContentAlignment="Center" FontFamily="Arial" Foreground="#FF19982D" FontSize="13"/>
                 <Label Content="Количество:" HorizontalContentAlignment="Center" FontFamily="Arial" FontSize="11"/>
-                <Label Content="2" HorizontalContentAlignment="Center" FontFamily="Arial" Foreground="#FF197898" Background="{x:Null}" FontSize="13"/>
+                <Label x:Name="LabelCountUserDama" Content="{Binding UserTable.UserDeck.Cards[11].CardsCount}" HorizontalContentAlignment="Center" FontFamily="Arial" Foreground="#FF197898" Background="{x:Null}" FontSize="13">
+                    <Label.DataContext>
+                        <Controllers:MainController/>
+                    </Label.DataContext>
+                </Label>
                 <Button Content="+" Tag="ДАМА"/>
                 <Button Content="-" Tag="ДАМА"/>
             </StackPanel>
@@ -406,7 +506,11 @@
                 <Label Content="Номинал:" HorizontalContentAlignment="Center" FontFamily="Arial" FontSize="11"/>
                 <Label Content="ВАЛЕТ" HorizontalContentAlignment="Center" FontFamily="Arial" Foreground="#FF19982D" FontSize="13"/>
                 <Label Content="Количество:" HorizontalContentAlignment="Center" FontFamily="Arial" FontSize="11"/>
-                <Label Content="2" HorizontalContentAlignment="Center" FontFamily="Arial" Foreground="#FF197898" Background="{x:Null}" FontSize="13"/>
+                <Label x:Name="LabelCountUserValet" Content="{Binding UserTable.UserDeck.Cards[12].CardsCount}" HorizontalContentAlignment="Center" FontFamily="Arial" Foreground="#FF197898" Background="{x:Null}" FontSize="13">
+                    <Label.DataContext>
+                        <Controllers:MainController/>
+                    </Label.DataContext>
+                </Label>
                 <Button Content="+" Tag="ВАЛЕТ"/>
                 <Button Content="-" Tag="ВАЛЕТ"/>
             </StackPanel>
