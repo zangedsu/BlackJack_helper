@@ -34,11 +34,23 @@ namespace BlackJeck_helper.Models;
         Cards.Add(new Card("валет",  10, cardsCount));  
     }
 
+    //получить количество карт
     public int GetAllCardsCount()
     {
         int count = 0;
         foreach (Card card in Cards) { count += card.CardsCount; }
         return count;
+    }
+
+    //получить сумму очков колоды
+    public int GetPointsSumm()
+    {
+        int summ = 0;
+        foreach (Card card in Cards)
+        {
+            summ += card.Value;
+        }
+        return summ;
     }
 
 }

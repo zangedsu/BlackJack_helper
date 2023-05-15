@@ -14,10 +14,13 @@ namespace BlackJack_helper.Controllers;
     private DealerTable _dealerTable;
     private UserTable _userTable;
     private Dictionary<string, int> _indexes;
+    private string _result;
+
     public Deck Deck { get { return _deck; } }
     public OpponentsTable OpponentsTable { get {return _opponentsTable;} }
     public DealerTable DealerTable { get { return _dealerTable;} }
     public UserTable UserTable { get { return _userTable;} }
+    public string Result { get { return _result; } }  
 
 
 
@@ -42,13 +45,32 @@ namespace BlackJack_helper.Controllers;
         _indexes.Add("король", 10);
         _indexes.Add("дама", 11);
         _indexes.Add("валет", 12);
+        _result = "N/D";
     }
+
+    //расчет результата
+
 
     //добавить карту в колоду на столе оппонентов
     public void AddCardToOpponentsTable(string nominal)
     {
-        _opponentsTable.OpponentsDeck.Cards[_indexes[nominal]].CardsCount += 1;
-        _deck.Cards[_indexes[nominal]].CardsCount -= 1;
+        if (_deck.Cards[_indexes[nominal]].CardsCount != 0)
+        {
+            _opponentsTable.OpponentsDeck.Cards[_indexes[nominal]].CardsCount += 1;
+            _deck.Cards[_indexes[nominal]].CardsCount -= 1;
+        }
+    }
+
+
+    //добавить карту в колоду на столе дилера
+    public void AddCardToDealerTable(string nominal)
+    {
+        if(_deck.Cards[_indexes[nominal]].CardsCount != 0)
+        {
+            _dealerTable.DealerDeck.Cards[_indexes[nominal]].CardsCount += 1;
+            _deck.Cards[_indexes[nominal]].CardsCount -= 1;
+        }
+
     }
 
     //удалить карту из колоды на столе оппонентов
@@ -59,18 +81,28 @@ namespace BlackJack_helper.Controllers;
     }
 
 
-    //добавить карту в колоду на столе дилера
-    public void AddCardToDealerTable(string nominal)
-    {
-        _dealerTable.DealerDeck.Cards[_indexes[nominal]].CardsCount += 1;
-        _deck.Cards[_indexes[nominal]].CardsCount -= 1;
-    }
-
     //добавить карту в колоду на столе игрока
     public void AddCardToUserTable(string nominal)
     {
-        _userTable.UserDeck.Cards[_indexes[nominal]].CardsCount += 1;
-        _deck.Cards[_indexes[nominal]].CardsCount -= 1;
+        if (_deck.Cards[_indexes[nominal]].CardsCount != 0)
+        {
+            _userTable.UserDeck.Cards[_indexes[nominal]].CardsCount += 1;
+            _deck.Cards[_indexes[nominal]].CardsCount -= 1;
+        }
+    }
+
+    //удалить карту из колоды на столе дилера
+    public void DeleteCardFromDealerTable(string nominal)
+    {
+        _dealerTable.DealerDeck.Cards[_indexes[nominal]].CardsCount -= 1;
+        _deck.Cards[_indexes[nominal]].CardsCount += 1;
+    }
+
+    //удалить карту из колоды на столе игрока
+    public void DeleteCardFromGamerTable(string nominal)
+    {
+        _userTable.UserDeck.Cards[_indexes[nominal]].CardsCount -= 1;
+        _deck.Cards[_indexes[nominal]].CardsCount += 1;
     }
 }
 

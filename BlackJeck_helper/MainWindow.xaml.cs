@@ -55,11 +55,28 @@ namespace BlackJeck_helper
             updateUserDataSources();
         }
 
+        //убрать карту из колоды игроков
         private void ClickDeleteGamers(object sender, RoutedEventArgs e)
         {
             string s = ((Button)sender).Tag.ToString();
             controller.DeleteCardFromOpponentsTable(s.ToLower());
             updateOpponentsDataSources();
+        }
+
+        //убрать карту из колоды дилера
+        private void ClickDeleteDealer(object sender, RoutedEventArgs e)
+        {
+            string s = ((Button)sender).Tag.ToString();
+            controller.DeleteCardFromDealerTable(s.ToLower());
+            updateDealerDataSources();
+        }
+
+        //убрать карту из колоды юзера
+        private void ClickDeleteUser(object sender, RoutedEventArgs e)
+        {
+            string s = ((Button)sender).Tag.ToString();
+            controller.DeleteCardFromGamerTable(s.ToLower());
+            updateUserDataSources();
         }
 
         public void updateOpponentsDataSources()
