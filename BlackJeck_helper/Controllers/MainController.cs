@@ -69,7 +69,7 @@ namespace BlackJack_helper.Controllers;
             }
         }
         double chance = ((double)_matchingCardsCount/(double)_deck.GetAllCardsCount())*100;
-        _result = $"{(double)chance}%"; 
+        _result = $"{Math.Round(chance, 3)}%"; 
     }
 
     //добавить карту в колоду на столе оппонентов

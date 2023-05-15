@@ -18,7 +18,7 @@
             <RowDefinition Height="49*" MaxHeight="50" MinHeight="49"/>
         </Grid.RowDefinitions>
         <Label Content="Вероятность удачи при вытягивании карты: " HorizontalAlignment="Left" Margin="1,0,0,0" Grid.Row="2" VerticalAlignment="Center" Height="24" VerticalContentAlignment="Center" Grid.Column="1" Width="253"/>
-        <Label x:Name="ResultLabel" Content="{Binding Result}" Margin="254,12,0,0" Grid.Row="2" VerticalAlignment="Top" Foreground="#FF2EC331" FontFamily="Arial Black" FontSize="16" Height="30" Width="89" Grid.Column="1" BorderBrush="#FF1DB35D" BorderThickness="1,1,1,1">
+        <Label x:Name="ResultLabel" Content="{Binding Result}" Margin="259,12,10,0" Grid.Row="2" VerticalAlignment="Top" Foreground="#FF2EC331" FontFamily="Arial Black" FontSize="16" Height="30" Grid.Column="1" BorderBrush="#FF1DB35D" BorderThickness="1,1,1,1">
             <Label.DataContext>
                 <Controllers:MainController/>
             </Label.DataContext>
@@ -526,8 +526,8 @@
                     <Controllers:MainController/>
                 </Label.DataContext>
             </Label>
-            <Label Content="Подходящих карт в колоде:"/>
-            <Label x:Name="MatchingCardsLabel" Content="{Binding MathchingCardsCount}">
+            <Label Content="Подходящих карт в колоде(без учета неизвестной у диллера):"/>
+            <Label x:Name="MatchingCardsLabel" Content="{Binding MathchingCardsCount}" FontFamily="Arial Black" FontSize="14">
                 <Label.DataContext>
                     <Controllers:MainController/>
                 </Label.DataContext>
