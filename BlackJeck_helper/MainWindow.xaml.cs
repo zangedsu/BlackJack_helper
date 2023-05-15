@@ -31,6 +31,7 @@ namespace BlackJeck_helper
             opponentsTable = new OpponentsTable();
         }
 
+        //добавить карту в колоду оппонентов
         private void ClickAddGamers(object sender, RoutedEventArgs e)
         {
             string s = ((Button)sender).Tag.ToString();
@@ -38,10 +39,26 @@ namespace BlackJeck_helper
            updateOpponentsDataSources();
         }
 
+        //добавить карту в колоду дилера
         private void ClickAddDealer(object sender, RoutedEventArgs e)
         {
             string s = ((Button)sender).Tag.ToString();
-            controller.AddCardToOpponentsTable(s.ToLower());
+            controller.AddCardToDealerTable(s.ToLower());
+            updateDealerDataSources();
+        }
+
+        //добавить карту в колоду игрока
+        private void ClickAddUser(object sender, RoutedEventArgs e)
+        {
+            string s = ((Button)sender).Tag.ToString();
+            controller.AddCardToUserTable(s.ToLower());
+            updateUserDataSources();
+        }
+
+        private void ClickDeleteGamers(object sender, RoutedEventArgs e)
+        {
+            string s = ((Button)sender).Tag.ToString();
+            controller.DeleteCardFromOpponentsTable(s.ToLower());
             updateOpponentsDataSources();
         }
 
@@ -82,11 +99,65 @@ namespace BlackJeck_helper
             LabelCountGamersValet.DataContext = controller;
         }
 
-        private void ClickDeleteGamers(object sender, RoutedEventArgs e)
+        public void updateDealerDataSources()
         {
-            string s = ((Button)sender).Tag.ToString();
-            controller.DeleteCardFromOpponentsTable(s.ToLower());
-            updateOpponentsDataSources();
+            LabelCountDealer2.DataContext = null;
+            LabelCountDealer2.DataContext = controller;
+            LabelCountDealer3.DataContext = null;
+            LabelCountDealer3.DataContext = controller;
+            LabelCountDealer4.DataContext = null;
+            LabelCountDealer4.DataContext = controller;
+            LabelCountDealer5.DataContext = null;
+            LabelCountDealer5.DataContext = controller;
+            LabelCountDealer6.DataContext = null;
+            LabelCountDealer6.DataContext = controller;
+            LabelCountDealer7.DataContext = null;
+            LabelCountDealer7.DataContext = controller;
+            LabelCountDealer8.DataContext = null;
+            LabelCountDealer8.DataContext = controller;
+            LabelCountDealer9.DataContext = null;
+            LabelCountDealer9.DataContext = controller;
+            LabelCountDealer10.DataContext = null;
+            LabelCountDealer10.DataContext = controller;
+            LabelCountDealerTuz.DataContext = null;
+            LabelCountDealerTuz.DataContext = controller;
+            LabelCountDealerKorol.DataContext = null;
+            LabelCountDealerKorol.DataContext = controller;
+            LabelCountDealerDama.DataContext = null;
+            LabelCountDealerDama.DataContext = controller;
+            LabelCountDealerValet.DataContext = null;
+            LabelCountDealerValet.DataContext = controller;
         }
+
+        public void updateUserDataSources()
+        {
+            LabelCountUser2.DataContext = null;
+            LabelCountUser2.DataContext = controller;
+            LabelCountUser3.DataContext = null;
+            LabelCountUser3.DataContext = controller;
+            LabelCountUser4.DataContext = null;
+            LabelCountUser4.DataContext = controller;
+            LabelCountUser5.DataContext = null;
+            LabelCountUser5.DataContext = controller;
+            LabelCountUser6.DataContext = null;
+            LabelCountUser6.DataContext = controller;
+            LabelCountUser7.DataContext = null;
+            LabelCountUser7.DataContext = controller;
+            LabelCountUser8.DataContext = null;
+            LabelCountUser8.DataContext = controller;
+            LabelCountUser9.DataContext = null;
+            LabelCountUser9.DataContext = controller;
+            LabelCountUser10.DataContext = null;
+            LabelCountUser10.DataContext = controller;
+            LabelCountUserTuz.DataContext = null;
+            LabelCountUserTuz.DataContext = controller;
+            LabelCountUserKorol.DataContext = null;
+            LabelCountUserKorol.DataContext = controller;
+            LabelCountUserDama.DataContext = null;
+            LabelCountUserDama.DataContext = controller;
+            LabelCountUserValet.DataContext = null;
+            LabelCountUserValet.DataContext = controller;
+        }
+
     }
 }

@@ -59,10 +59,17 @@ namespace BlackJack_helper.Controllers;
     }
 
 
-    //добавить карту в колоду на столе оппонентов
+    //добавить карту в колоду на столе дилера
     public void AddCardToDealerTable(string nominal)
     {
-        //_dealerTable.Cards[_indexes[nominal]].CardsCount += 1;
+        _dealerTable.DealerDeck.Cards[_indexes[nominal]].CardsCount += 1;
+        _deck.Cards[_indexes[nominal]].CardsCount -= 1;
+    }
+
+    //добавить карту в колоду на столе игрока
+    public void AddCardToUserTable(string nominal)
+    {
+        _userTable.UserDeck.Cards[_indexes[nominal]].CardsCount += 1;
         _deck.Cards[_indexes[nominal]].CardsCount -= 1;
     }
 }
