@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows;
+using System.Windows.Data;
 using BlackJack_helper.Models;
 using BlackJeck_helper.Models;
 
@@ -14,6 +16,8 @@ namespace BlackJack_helper.Controllers;
     private DealerTable _dealerTable;
     private UserTable _userTable;
     private Dictionary<string, int> _indexes;
+    private int _userPoints = 0;
+    private int _matchingCardsCount = 0;
     private string _result;
 
     public Deck Deck { get { return _deck; } }
@@ -21,6 +25,8 @@ namespace BlackJack_helper.Controllers;
     public DealerTable DealerTable { get { return _dealerTable;} }
     public UserTable UserTable { get { return _userTable;} }
     public string Result { get { return _result; } }  
+    public int UserPoints { get { return _userPoints; } }
+    public int MathchingCardsCount { get {return _matchingCardsCount; } }
 
 
 
@@ -49,7 +55,22 @@ namespace BlackJack_helper.Controllers;
     }
 
     //расчет результата
-
+    public void RefreshResult()
+    {
+        _userPoints = _userTable.UserDeck.GetPointsSumm();
+        
+        //количество подходящих карт в оставшейся колоде
+         _matchingCardsCount = 0;
+        foreach (var card in _deck.Cards)
+        {
+            if(_userPoints + card.Value <= 21)
+            {
+                _matchingCardsCount += card.CardsCount;
+            }
+        }
+        double chance = ((double)_matchingCardsCount/(double)_deck.GetAllCardsCount())*100;
+        _result = $"{(double)chance}%"; 
+    }
 
     //добавить карту в колоду на столе оппонентов
     public void AddCardToOpponentsTable(string nominal)
@@ -76,8 +97,12 @@ namespace BlackJack_helper.Controllers;
     //удалить карту из колоды на столе оппонентов
     public void DeleteCardFromOpponentsTable(string nominal)
     {
-        _opponentsTable.OpponentsDeck.Cards[_indexes[nominal]].CardsCount -= 1;
-        _deck.Cards[_indexes[nominal]].CardsCount += 1;
+        if (_opponentsTable.OpponentsDeck.Cards[_indexes[nominal]].CardsCount != 0)
+        {
+            _opponentsTable.OpponentsDeck.Cards[_indexes[nominal]].CardsCount -= 1;
+            _deck.Cards[_indexes[nominal]].CardsCount += 1;
+        }
+
     }
 
 
@@ -94,15 +119,21 @@ namespace BlackJack_helper.Controllers;
     //удалить карту из колоды на столе дилера
     public void DeleteCardFromDealerTable(string nominal)
     {
-        _dealerTable.DealerDeck.Cards[_indexes[nominal]].CardsCount -= 1;
-        _deck.Cards[_indexes[nominal]].CardsCount += 1;
+        if (_dealerTable.DealerDeck.Cards[_indexes[nominal]].CardsCount != 0)
+        {
+            _dealerTable.DealerDeck.Cards[_indexes[nominal]].CardsCount -= 1;
+            _deck.Cards[_indexes[nominal]].CardsCount += 1;
+        }
     }
 
     //удалить карту из колоды на столе игрока
     public void DeleteCardFromGamerTable(string nominal)
     {
-        _userTable.UserDeck.Cards[_indexes[nominal]].CardsCount -= 1;
-        _deck.Cards[_indexes[nominal]].CardsCount += 1;
+        if (_userTable.UserDeck.Cards[_indexes[nominal]].CardsCount != 0)
+        {
+            _userTable.UserDeck.Cards[_indexes[nominal]].CardsCount -= 1;
+            _deck.Cards[_indexes[nominal]].CardsCount += 1;
+        }
     }
 }
 

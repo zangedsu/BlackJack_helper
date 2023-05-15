@@ -48,7 +48,11 @@ namespace BlackJeck_helper.Models;
         int summ = 0;
         foreach (Card card in Cards)
         {
-            summ += card.Value;
+            if(card.CardsCount != 0)
+            {
+                summ += card.Value * card.CardsCount;
+            }
+            
         }
         return summ;
     }

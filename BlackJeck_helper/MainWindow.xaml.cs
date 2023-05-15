@@ -37,6 +37,7 @@ namespace BlackJeck_helper
             string s = ((Button)sender).Tag.ToString();
             controller.AddCardToOpponentsTable(s.ToLower());
            updateOpponentsDataSources();
+            updateResultDataSource();
         }
 
         //добавить карту в колоду дилера
@@ -45,6 +46,7 @@ namespace BlackJeck_helper
             string s = ((Button)sender).Tag.ToString();
             controller.AddCardToDealerTable(s.ToLower());
             updateDealerDataSources();
+            updateResultDataSource();
         }
 
         //добавить карту в колоду игрока
@@ -53,6 +55,7 @@ namespace BlackJeck_helper
             string s = ((Button)sender).Tag.ToString();
             controller.AddCardToUserTable(s.ToLower());
             updateUserDataSources();
+            updateResultDataSource();
         }
 
         //убрать карту из колоды игроков
@@ -61,6 +64,7 @@ namespace BlackJeck_helper
             string s = ((Button)sender).Tag.ToString();
             controller.DeleteCardFromOpponentsTable(s.ToLower());
             updateOpponentsDataSources();
+            updateResultDataSource();
         }
 
         //убрать карту из колоды дилера
@@ -69,6 +73,7 @@ namespace BlackJeck_helper
             string s = ((Button)sender).Tag.ToString();
             controller.DeleteCardFromDealerTable(s.ToLower());
             updateDealerDataSources();
+            updateResultDataSource();
         }
 
         //убрать карту из колоды юзера
@@ -77,6 +82,7 @@ namespace BlackJeck_helper
             string s = ((Button)sender).Tag.ToString();
             controller.DeleteCardFromGamerTable(s.ToLower());
             updateUserDataSources();
+            updateResultDataSource();
         }
 
         public void updateOpponentsDataSources()
@@ -174,6 +180,19 @@ namespace BlackJeck_helper
             LabelCountUserDama.DataContext = controller;
             LabelCountUserValet.DataContext = null;
             LabelCountUserValet.DataContext = controller;
+        }
+
+        public void updateResultDataSource()
+        {
+            controller.RefreshResult();
+            ResultLabel.DataContext = null;
+            ResultLabel.DataContext = controller;
+
+            UserTotalPointsLabel.DataContext = null;
+            UserTotalPointsLabel.DataContext = controller;
+
+            MatchingCardsLabel.DataContext = null;
+            MatchingCardsLabel.DataContext = controller;
         }
 
     }
