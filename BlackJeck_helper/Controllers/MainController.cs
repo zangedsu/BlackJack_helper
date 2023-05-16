@@ -58,9 +58,10 @@ namespace BlackJack_helper.Controllers;
     public void RefreshResult()
     {
         _userPoints = _userTable.UserDeck.GetPointsSumm();
-        
+
         //количество подходящих карт в оставшейся колоде
-         _matchingCardsCount = 0;
+        _matchingCardsCount = 0;
+
         foreach (var card in _deck.Cards)
         {
             if(_userPoints + card.Value <= 21)
@@ -68,7 +69,25 @@ namespace BlackJack_helper.Controllers;
                 _matchingCardsCount += card.CardsCount;
             }
         }
-        double chance = ((double)_matchingCardsCount/(double)_deck.GetAllCardsCount())*100;
+
+        //количество карт с учетом одной незвестной у диллера
+        var matchingCardsWithoutOne = 0;
+
+        foreach (var card in _deck.Cards)
+        {
+            if (_userPoints + card.Value <= 21)
+            {
+                if(card.CardsCount != 0)
+                {
+                    matchingCardsWithoutOne += card.CardsCount;
+                }  
+            }
+        }
+        //считаем два сценария (нужная карта в колоде\одна нужная карта у дилера)
+        double iter1 = ((double)matchingCardsWithoutOne / (double)_deck.GetAllCardsCount()) * 100;
+        double iter2 = ((double)_matchingCardsCount / (double)_deck.GetAllCardsCount()) * 100;
+        //вычисляем среднее из двух сценариев
+        double chance = ((iter1 + iter2)/2);
         _result = $"{Math.Round(chance, 3)}%"; 
     }
 

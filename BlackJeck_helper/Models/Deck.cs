@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows;
 
 namespace BlackJeck_helper.Models;
     public class Deck
@@ -39,6 +40,21 @@ namespace BlackJeck_helper.Models;
     {
         int count = 0;
         foreach (Card card in Cards) { count += card.CardsCount; }
+        return count;
+    }
+
+    //получить количество карт - 1 
+    public int GetAllCardsWithoutOneCount()
+    {
+        int count = 0;
+        foreach (Card card in Cards) 
+        { 
+            if(card.CardsCount != 0)
+            {
+                count += card.CardsCount - 1;
+            }
+            
+        }
         return count;
     }
 
