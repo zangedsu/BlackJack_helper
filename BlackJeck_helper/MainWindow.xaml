@@ -23,7 +23,13 @@
                 <Controllers:MainController/>
             </Label.DataContext>
         </Label>
-        <Grid x:Name="CardsGrid" Background="#FFBBC5A2" Grid.ColumnSpan="2" Grid.RowSpan="2">
+        <Grid x:Name="CardsGrid" Grid.ColumnSpan="2" Grid.RowSpan="2">
+            <Grid.Background>
+                <RadialGradientBrush>
+                    <GradientStop Color="#FF65B58B"/>
+                    <GradientStop Color="#FFAFD0B7" Offset="1"/>
+                </RadialGradientBrush>
+            </Grid.Background>
             <Grid.RowDefinitions>
                 <RowDefinition Height="33*"/>
                 <RowDefinition Height="75*"/>
@@ -60,7 +66,7 @@
                     </Label.DataContext>
                 </Label>
                 <Button Content="+" Click="ClickAddGamers" Tag="2"/>
-                <Button Content="-" Tag="2" Click="ClickDeleteGamers"/>
+                <Button Content="-" Tag="2" Click="ClickDeleteGamers" VerticalContentAlignment="Stretch"/>
             </StackPanel>
             <StackPanel Grid.Row="1" Grid.Column="1" Background="White" Margin="5,0,5,0">
                 <Label Content="Номинал:" HorizontalContentAlignment="Center" FontFamily="Arial" FontSize="11"/>
