@@ -79,17 +79,21 @@ namespace BlackJack_helper.Controllers;
             {
                 if(card.CardsCount != 0)
                 {
-                    matchingCardsWithoutOne += card.CardsCount;
+                    matchingCardsWithoutOne += card.CardsCount - 1;
                 }  
             }
         }
         //считаем два сценария (нужная карта в колоде\одна нужная карта у дилера)
-        double iter1 = ((double)matchingCardsWithoutOne / (double)_deck.GetAllCardsCount()) * 100;
+        //"плохой" сценарий
+        double iter1 = ((double)matchingCardsWithoutOne / (double)_deck.GetAllCardsWithoutOneCount()) * 100;
+        //"хороший" сценарий
         double iter2 = ((double)_matchingCardsCount / (double)_deck.GetAllCardsCount()) * 100;
+
+      // MessageBox.Show($"1: {iter1}\n2: {iter2}");
         //вычисляем среднее из двух сценариев
         double chance = ((iter1 + iter2)/2);
         _result = $"{Math.Round(chance, 3)}%"; 
-    }
+    }//RefreshResult
 
     //добавить карту в колоду на столе оппонентов
     public void AddCardToOpponentsTable(string nominal)
