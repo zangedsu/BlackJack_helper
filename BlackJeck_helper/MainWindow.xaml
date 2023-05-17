@@ -212,7 +212,7 @@
                 <Button Content="+" Tag="ВАЛЕТ" Click="ClickAddGamers"/>
                 <Button Content="-" Tag="ВАЛЕТ" Click="ClickDeleteGamers"/>
             </StackPanel>
-            <StackPanel Grid.Row="3" Background="White" Margin="5,0,5,0">
+            <StackPanel Grid.Row="3" Margin="5,0,5,0" Background="White">
                 <Label Content="Номинал:" HorizontalContentAlignment="Center" FontFamily="Arial" FontSize="11"/>
                 <Label Content="2" HorizontalContentAlignment="Center" FontFamily="Arial" Foreground="#FF19982D" FontSize="13"/>
                 <Label Content="Количество:" HorizontalContentAlignment="Center" FontFamily="Arial" FontSize="11"/>
@@ -526,6 +526,7 @@
             </StackPanel>
         </Grid>
         <StackPanel Grid.Row="2" Orientation="Horizontal" VerticalAlignment="Center" Height="26">
+            <Button Content="Экспорт в файл" Click="ClickSaveData" Background="White" Margin="5,0,5,0" HorizontalContentAlignment="Center" FontFamily="Algerian"/>
             <Label Content="Набранные очки: "/>
             <Label x:Name="UserTotalPointsLabel" Content="{Binding UserPoints}" FontFamily="Arial Black" FontSize="14">
                 <Label.DataContext>

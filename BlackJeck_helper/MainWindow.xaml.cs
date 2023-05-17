@@ -23,12 +23,14 @@ namespace BlackJeck_helper
     public partial class MainWindow : Window
     {
         public MainController controller;
-        public OpponentsTable opponentsTable;
+        // public OpponentsTable opponentsTable;
+        public DataController dataController;
         public MainWindow()
         {
             InitializeComponent();
             controller = new MainController();
-            opponentsTable = new OpponentsTable();
+            dataController = new DataController(controller);
+          //  opponentsTable = new OpponentsTable();
         }
 
         //добавить карту в колоду оппонентов
@@ -195,5 +197,9 @@ namespace BlackJeck_helper
             MatchingCardsLabel.DataContext = controller;
         }
 
+        private void ClickSaveData(object sender, RoutedEventArgs e)
+        {
+            dataController.SaveDataToFile();
+        }
     }
 }
