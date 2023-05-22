@@ -202,6 +202,7 @@ namespace BlackJeck_helper
             dataController.SaveDataToFile();
         }
 
+        //сбросить партую
         private void ClickResetGame(object sender, RoutedEventArgs e)
         {
             controller.ResetGame();
