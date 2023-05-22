@@ -526,6 +526,7 @@
             </StackPanel>
         </Grid>
         <StackPanel Grid.Row="2" Orientation="Horizontal" VerticalAlignment="Center" Height="26">
+            <Button Content="Сброс" Click="ClickResetGame" Background="White" HorizontalContentAlignment="Center" FontFamily="Algerian" Margin="5,0,0,0" Foreground="Black" BorderBrush="Red"/>
             <Button Content="Экспорт в файл" Click="ClickSaveData" Background="White" Margin="5,0,5,0" HorizontalContentAlignment="Center" FontFamily="Algerian"/>
             <Label Content="Набранные очки: "/>
             <Label x:Name="UserTotalPointsLabel" Content="{Binding UserPoints}" FontFamily="Arial Black" FontSize="14">

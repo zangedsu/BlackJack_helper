@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
@@ -157,6 +158,15 @@ namespace BlackJack_helper.Controllers;
             _userTable.UserDeck.Cards[_indexes[nominal]].CardsCount -= 1;
             _deck.Cards[_indexes[nominal]].CardsCount += 1;
         }
+    }
+
+    //сброс партии
+    public void ResetGame()
+    {
+        _deck = new Deck(1);
+        _opponentsTable = new OpponentsTable();
+        _userTable = new UserTable();
+        _dealerTable = new DealerTable();
     }
 }
 

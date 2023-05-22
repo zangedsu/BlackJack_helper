@@ -201,5 +201,14 @@ namespace BlackJeck_helper
         {
             dataController.SaveDataToFile();
         }
+
+        private void ClickResetGame(object sender, RoutedEventArgs e)
+        {
+            controller.ResetGame();
+            updateOpponentsDataSources();
+            updateDealerDataSources();
+            updateUserDataSources();
+            updateResultDataSource();
+        }
     }
 }
